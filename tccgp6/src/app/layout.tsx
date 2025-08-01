@@ -32,3 +32,17 @@ export default function RootLayout({
     </html>
   );
 }
+
+//*import { redirect } from "next/navigation";
+
+//export default function RootLayout({ children }: { children: React.ReactNode }) {
+  //if (typeof window !== "undefined" && !localStorage.getItem("usuario")) {
+    //redirect("/login");
+  //}
+
+  //return (
+    //<html lang="pt-BR">
+      //<body>{children}</body>
+    //</html>
+ // );
+//}
