@@ -31,12 +31,13 @@ export default function Login() {
               className="text-[#4B4B4B] rounded-[20] bg-sky-50 shadow-xl w-full p-2 border-white-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               placeholder="  Senha: "
             />
+            <p  className="text-shadow-lg block text-white mb-1 justify-self-end text-[10px] m-1 underline"> Esqueceu sua senha? </p>
           </div>
           <br></br>
           <div className="flex justify-between mt-6">
             <button
               type="submit"
-              className="font-bold rounded-[15] shadow-lg bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
+              className="font-bold rounded-[15] w-35 shadow-lg bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
             >
               Confirmar
             </button>
