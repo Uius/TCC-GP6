@@ -26,7 +26,7 @@ export default function HomePage() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 bg-neutral-900 p-6">
+      <main className="bodyBG flex-1 bg-neutral-900 p-6">
         {/* Header */}
         <header className="flex justify-between items-center mb-6">
           <div className="flex items-center gap-3">
@@ -36,7 +36,7 @@ export default function HomePage() {
 
           <div className="flex items-center gap-6">
             <nav className="flex gap-6 text-sm">
-              <a href="#" className="border-b-2 border-white">HOME</a>
+              <a href="#" className=" border-b-2 border-white">HOME</a>
               <a href="#">ESTOQUE</a>
               <a href="#">SUPORTE</a>
             </nav>
@@ -70,11 +70,7 @@ export default function HomePage() {
                 <p className="text-sm">Tutorial simplificado...</p>
               </div>
             </div>
-            <div className="bg-black w-full md:w-1/2 h-40 rounded flex items-center justify-center text-white text-2xl gap-4">
-              <span>⏪</span>
-              <button className="text-3xl">▶️</button>
-              <span>⏩</span>
-            </div>
+
           </div>
         </section>
       </main>
