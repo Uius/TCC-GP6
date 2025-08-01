@@ -4,17 +4,17 @@ import React from "react";
 export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black">
-      <div className="h-143 bg-yellow-600 p-30 rounded-md shadow-lg bodyloguin">
+      <div className="h-175 bg-yellow-600 p-20 rounded-md shadow-lg bodyloguin">
         <div className="flex flex-col items-center mb-6">
           <Image
-            src="/lion.png" // você vai precisar colocar essa imagem na pasta public
+            src="/LOGOPRETO.png"// você vai precisar colocar essa imagem na pasta public
             alt="Logo Leão"
-            width={80}
-            height={80}
+            width={350}
+            height={350}
           />
           
         </div>
-        <h3 className="text-center text-shadow-lg/30 text-white text-xl font-semibold mb-6">SEJA BEM-VINDO (A)!</h3>
+        <h3 className="text-center text-shadow-lg/30 text-white text-2xl font-semibold mb-6">SEJA BEM-VINDO (A)!</h3>
         <form className="space-y-4">
           <div>
             <label className="w-15 text-shadow-lg/30 font-bold block text-white mb-1">CNPJ:</label>
