@@ -29,23 +29,30 @@ export default function HomePage() {
       <main className="bodyBG flex-1 bg-neutral-900 p-6">
         {/* Header */}
         <header className="flex justify-between items-center mb-6">
-          <div className="flex items-center gap-3">
-            <div className="bg-white rounded-full w-8 h-8" />
-            <span className="uppercase text-sm tracking-wide">USERNAME</span>
-          </div>
+  <div className="flex items-center gap-3">
+    <div className="bg-white rounded-full w-8 h-8" />
+    <span className="uppercase text-sm tracking-wide">USERNAME</span>
+  </div>
 
-          <div className="flex items-center gap-6">
-            <nav className="flex gap-6 text-sm">
-              <a href="#" className=" border-b-2 border-white">HOME</a>
-              <a href="#">ESTOQUE</a>
-              <a href="#">SUPORTE</a>
-            </nav>
-            <div className="text-right text-xs leading-4">
-              <div>18:30</div>
-              <div>17/03/2025</div>
-            </div>
-          </div>
-        </header>
+  <div className="flex items-center gap-6">
+    <nav className="flex gap-6 text-sm">
+      <a href="#" className="w-18 h-8 flex items-center justify-center text-center bg-gray-800 rounded-sm underline">
+        HOME
+      </a>
+      <a href="#" className="h-8 flex items-center justify-center">
+        ESTOQUE
+      </a>
+      <a href="#" className="h-8 flex items-center justify-center">
+        SUPORTE
+      </a>
+    </nav>
+    <div className="text-right text-xs leading-4">
+      <div>18:30</div>
+      <div>17/03/2025</div>
+    </div>
+  </div>
+</header>
+
 
         {/* Welcome Section */}
         <section className="bg-yellow-600 rounded p-6 mb-6">
