@@ -7,10 +7,11 @@ export default function Login() {
       <div className="h-143 bg-yellow-600 p-30 rounded-md shadow-lg bodyloguin">
         <div className="flex flex-col items-center mb-6">
           <Image
-            src="/lion.png" // você vai precisar colocar essa imagem na pasta public
+          className="-m-15 mb-1"
+            src="/LOGOPRETO.png" // você vai precisar colocar essa imagem na pasta public
             alt="Logo Leão"
-            width={80}
-            height={80}
+            width={362}
+            height={150}
           />
           
         </div>
