@@ -54,13 +54,13 @@ export default function HomePage() {
 
   <div className="flex items-center gap-6">
     <nav className="flex gap-6 text-sm">
-      <a href="#" className="w-18 h-8 flex items-center justify-center text-center bg-gray-800 rounded-sm underline">
+      <a href="/" className="h-8 flex items-center justify-center">
         HOME
       </a>
-      <a href="/estoque" className="h-8 flex items-center justify-center">
+      <a href="/estoque" className="h-8 flex items-center justify-center ">
         ESTOQUE
       </a>
-      <a href="/suporte" className="h-8 flex items-center justify-center">
+      <a href="#" className="w-24 h-8 flex items-center justify-center text-center bg-gray-800 rounded-sm underline">
         SUPORTE
       </a>
     </nav>
@@ -73,22 +73,6 @@ export default function HomePage() {
     </div>
   </div>
 </header>
-
-
-        {/* Welcome Section */}
-        <section className="p-6 mb-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <img src="/HOMEVAMOSLA.png" alt="Logo Empresa" className="h-36 object-contain" />
-          </div>
-        </section>
-
-        {/* Tutorial Section */}
-        <section className=" p-4 ">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-             <img src="/TUTORIAL.png" alt="Tutorial venha nos conhecer" />
-          </div>
-          <iframe className="aspect-video items-center" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-        </section>
       </main>
     </div>
   )
