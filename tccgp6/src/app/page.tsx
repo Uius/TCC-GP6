@@ -87,7 +87,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
              <img src="/TUTORIAL.png" alt="Tutorial venha nos conhecer" />
           </div>
-          <iframe className="aspect-video items-center" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+          <iframe className="aspect-video items-center" src="https://youtu.be/Q0zdxsqWAdA?si=Hh0K5dgdnXQB-uIt"></iframe>
         </section>
       </main>
     </div>
