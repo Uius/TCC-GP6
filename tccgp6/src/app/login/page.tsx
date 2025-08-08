@@ -1,3 +1,4 @@
+import { Zen_Old_Mincho } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 
@@ -9,13 +10,8 @@ export default function Login() {
           <Image
             src="/LOGOPRETO.png"// você vai precisar colocar essa imagem na pasta public
             alt="Logo Leão"
-<<<<<<< HEAD
-            width={350}
-            height={350}
-=======
             width={280}
             height={280}
->>>>>>> 9825e90e1c799533195e1d71c4374c2a93fdf03c
           />
           
         </div>
@@ -33,9 +29,12 @@ export default function Login() {
             <label className="w-15 text-shadow-lg/30 font-bold block text-white mb-1">SENHA:</label>
             <input
               type="password"
-              className="text-[#4B4B4B] absolute rounded-[20] bg-sky-50 shadow-xl w-full p-2 border-white-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="text-[#4B4B4B] rounded-[20] bg-sky-50 shadow-xl w-full p-2 border-white-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               placeholder="  Senha: "
+              
             />
+            <img src="OLHO.png" alt="Icon olho" className="h-8 w-8 " className="h-6 w-6 absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"/>
+            
             <p  className="text-shadow-lg/30 block text-white mb-1 justify-self-end text-[15px] m-1 underline"> Esqueceu sua senha? </p>
           </div>
           <br></br>
