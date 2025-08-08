@@ -8,14 +8,14 @@ export default function HomePage() {
 
   return (
     <div className="h-auto text-white">
-      
+
       {/* HEADER */}
       <header className="relative bg-neutral-900 flex justify-between items-center h-20 px-6">
-        
+
         {/* Logo no header */}
-        <img 
-          src="/LOGOBRANCA.png" 
-          alt="Logo" 
+        <img
+          src="/LOGOBRANCA.png"
+          alt="Logo"
           className="h-22 w-40 absolute left-6"
         />
 
@@ -28,7 +28,7 @@ export default function HomePage() {
         {/* Menu + Data/Hora */}
         <div className="flex items-center gap-6">
           <nav className="flex gap-6 text-sm">
-            <a href="#" className="text-white bg-gray-800 py-2 px-4 rounded-sm">HOME</a>
+            <a href="#" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
             <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
             <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
           </nav>
@@ -44,7 +44,7 @@ export default function HomePage() {
 
       {/* Conteúdo abaixo do header */}
       <div className="flex">
-        
+
         {/* Sidebar */}
         <aside className="w-64 bg-yellow-600 flex flex-col justify-between p-4">
           <div>
@@ -81,19 +81,22 @@ export default function HomePage() {
           {/* Welcome Section */}
           <section className="p-6 mb-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <img src="/HOMEVAMOSLA.png" alt="Logo Empresa" className="h-120 w-350 " />
+              <img src="/HOMEVAMOSLA.png" alt="Logo Empresa" className="h-160 w-348 " />
             </div>
           </section>
 
           {/* Tutorial Section */}
           <section className="p-4">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <img src="/TUTORIAL.png" alt="Tutorial" className="h-60 w-400"/>
+              <img src="/TUTORIAL.png" alt="Tutorial" className="h-60 w-350" />
             </div>
             <iframe
-              className="aspect-video "
-              src="https://youtu.be/Q0zdxsqWAdA?si=Hh0K5dgdnXQB-uIt"
+              className="aspect-video w-350"
+              src="https://www.youtube.com/embed/DYl2STTuX-Q"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             ></iframe>
+
           </section>
         </main>
       </div>
