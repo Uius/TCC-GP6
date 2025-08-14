@@ -7,18 +7,10 @@ export default function Login() {
       <div className="h-175 bg-yellow-600 p-20 rounded-md shadow-lg bodyloguin">
         <div className="flex flex-col items-center mb-6">
           <Image
-<<<<<<< HEAD
             src="/LOGOPRETO.png"// você vai precisar colocar essa imagem na pasta public
             alt="Logo Leão"
             width={350}
             height={350}
-=======
-          className="-m-15 mb-1"
-            src="/LOGOPRETO.png" // você vai precisar colocar essa imagem na pasta public
-            alt="Logo Leão"
-            width={362}
-            height={150}
->>>>>>> 709d56321bf1743ea4883789c3ad434b4fdcd50f
           />
           
         </div>
@@ -38,6 +30,7 @@ export default function Login() {
               type="password"
               className="text-[#4B4B4B] rounded-[20] bg-sky-50 shadow-xl w-full p-2 border-white-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               placeholder="  Senha: "
+              id="senha"
             />
             <p  className="text-shadow-lg/30 block text-white mb-1 justify-self-end text-[15px] m-1 underline"> Esqueceu sua senha? </p>
           </div>

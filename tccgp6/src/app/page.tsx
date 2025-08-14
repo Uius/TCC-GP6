@@ -44,9 +44,9 @@ export default function HomePage() {
       </aside>
 
       {/* Main Content */}
-      <main className="bodyBG flex-1 bg-neutral-900 p-6">
+      <main className="flex-1 bg-orange-900 p-6">
         {/* Header */}
-        <header className="flex justify-between items-center mb-6">
+        <header className="flex justify-between bg-neutral-900 items-center mb-6">
   <div className="flex items-center gap-3">
     <img src="/ICONEPERFIL.png" alt="" className=' w-8 h-8' />
     <span className="uppercase text-sm tracking-wide">USERNAME</span>
