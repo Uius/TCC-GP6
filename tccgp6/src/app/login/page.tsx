@@ -1,8 +1,15 @@
+ "use client"
+
 import { Zen_Old_Mincho } from "next/font/google";
 import Image from "next/image";
-import React from "react";
+import React, { use } from "react";
+import { useMostrarSenha } from "@/hooks/useShowPass";
+
+
+
 
 export default function Login() {
+  const { isVisible, toggle, inputType } = useMostrarSenha();
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-black">
       <div className="h-143 bg-yellow-600 p-20 rounded-md shadow-lg bodyloguin">
@@ -13,7 +20,7 @@ export default function Login() {
             width={280}
             height={280}
           />
-          
+
         </div>
         <h3 className="text-center text-shadow-lg/30 text-white text-2xl font-semibold mb-6">SEJA BEM-VINDO (A)!</h3>
         <form className="space-y-4">
@@ -28,18 +35,19 @@ export default function Login() {
           <div>
             <label className="w-15 text-shadow-lg/30 font-bold block text-white mb-1">SENHA:</label>
             <input
-              type="password"
+              type={inputType}
               className="text-[#4B4B4B] rounded-[20] bg-sky-50 shadow-xl w-full p-2 border-white-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               placeholder="  Senha: "
-<<<<<<< HEAD
               id="senha"
-=======
-              
->>>>>>> 9d55c2414862a492c41577ff6a613c770ad06405
             />
-            <img src="OLHO.png" alt="Icon olho" className="h-8 w-8 " className="h-6 w-6 absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"/>
-            
-            <p  className="text-shadow-lg/30 block text-white mb-1 justify-self-end text-[15px] m-1 underline"> Esqueceu sua senha? </p>
+            <Image
+              src={isVisible ? "/view.png" : "/hide.png" }
+              alt={isVisible ? "Mostrar senha" : "Ocultar senha"}
+              width={24}
+              height={24}
+              onClick={toggle}
+             className="w-8 h-8 pointer"
+            />            <p className="text-shadow-lg/30 block text-white mb-1 justify-self-end text-[15px] m-1 underline"> Esqueceu sua senha? </p>
           </div>
           <br></br>
           <div className="flex justify-between mt-2">
