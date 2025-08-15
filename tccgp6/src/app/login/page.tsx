@@ -46,7 +46,7 @@ export default function Login() {
               width={24}
               height={24}
               onClick={toggle}
-             className="w-8 h-8 pointer"
+             className="w-8 h-8 pointer justify-self-end "
             />            <p className="text-shadow-lg/30 block text-white mb-1 justify-self-end text-[15px] m-1 underline"> Esqueceu sua senha? </p>
           </div>
           <br></br>
