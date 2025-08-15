@@ -32,8 +32,9 @@ export default function Login() {
               className="text-[#4B4B4B] rounded-[20] bg-sky-50 shadow-xl w-full p-2 border-white-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
               placeholder="  Senha: "
               
+              
             />
-            <img src="OLHO.png" alt="Icon olho" className="h-8 w-8 " className="h-6 w-6 absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"/>
+            <img src="OLHO.png" alt="Icon olho"  className="h-6 w-6 absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"/>
             
             <p  className="text-shadow-lg/30 block text-white mb-1 justify-self-end text-[15px] m-1 underline"> Esqueceu sua senha? </p>
           </div>
