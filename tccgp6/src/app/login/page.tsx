@@ -1,4 +1,4 @@
- "use client"
+"use client"
 
 import { Zen_Old_Mincho } from "next/font/google";
 import Image from "next/image";
@@ -33,21 +33,26 @@ export default function Login() {
             />
           </div>
           <div>
-            <label className="w-15 text-shadow-lg/30 font-bold block text-white mb-1">SENHA:</label>
-            <input
-              type={inputType}
-              className="text-[#4B4B4B] rounded-[20] bg-sky-50 shadow-xl w-full p-2 border-white-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-              placeholder="  Senha: "
-              id="senha"
-            />
-            <Image
-              src={isVisible ? "/view.png" : "/hide.png" }
-              alt={isVisible ? "Mostrar senha" : "Ocultar senha"}
-              width={24}
-              height={24}
-              onClick={toggle}
-             className="w-8 h-8 pointer justify-self-end "
-            />            <p className="text-shadow-lg/30 block text-white mb-1 justify-self-end text-[15px] m-1 underline"> Esqueceu sua senha? </p>
+            <label className="w-15 text-shadow-lg/30 font-bold block text-white mb-1">
+              SENHA:
+            </label>
+            <div className="relative">
+              <input
+                type={inputType}
+                className="text-[#4B4B4B] rounded-[20] bg-sky-50 shadow-xl w-full p-2 pr-10 border-white-600 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                placeholder="  Senha: "
+                id="senha"
+              />
+              <Image
+                src={isVisible ? "/view.png" : "/hide.png"}
+                alt={isVisible ? "Mostrar senha" : "Ocultar senha"}
+                width={24}
+                height={24}
+                onClick={toggle}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"
+              />
+            </div>
+            <p className="text-shadow-lg/30 block text-white mb-1 justify-self-end text-[15px] m-1 mt-4 underline"> Esqueceu sua senha? </p>
           </div>
           <br></br>
           <div className="flex justify-between mt-2">
