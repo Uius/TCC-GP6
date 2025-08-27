@@ -28,8 +28,8 @@ export default function HomePage() {
         {/* Menu + Data/Hora */}
         <div className="flex items-center gap-6">
           <nav className="flex gap-6 text-sm">
-            <a href="/" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
-            <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
+            <a href="/" className="text-white py-2 px-4">HOME</a>
+            <a href="/estoque" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">ESTOQUE</a>
             <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
           </nav>
           <div className="text-right text-xs leading-4">
