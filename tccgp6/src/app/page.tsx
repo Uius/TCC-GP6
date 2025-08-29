@@ -46,10 +46,8 @@ export default function HomePage() {
       <div className="flex">
 
         {/* Sidebar */}
-        <aside className="w-64 bg-yellow-600 flex flex-col justify-between p-4">
+        <aside className="w-72 bg-yellow-600 flex flex-col justify-between p-4">
           <div>
-
-
             <nav className="space-y-4 text-black font-semibold">
               <div className="flex flex-row">
                 <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6 mr-2" />
@@ -65,7 +63,7 @@ export default function HomePage() {
               </div>
               <div className="flex flex-row">
                 <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Notificações</a>
+                <a href="/notifica" className="block">Notificações</a>
               </div>
             </nav>
           </div>
@@ -77,26 +75,23 @@ export default function HomePage() {
         </aside>
 
         {/* Main Content */}
-        <main className="flex-1 bg-yellow-600 p-6">
-          {/* Welcome Section */}
-          <section className="p-6 mb-6">
+        <main className="flex-1 bg-yellow-600 p-8">
+          <section className="p-6 mb-6 bg-yellow-600 rounded-lg shadow-lg">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <img src="/HOMEVAMOSLA.png" alt="Logo Empresa" className="h-160 w-348 " />
+              <img src="/HOMEVAMOSLA.png" alt="Logo Empresa" className="h-160 w-348" />
             </div>
           </section>
 
-          {/* Tutorial Section */}
-          <section className="p-4">
+          <section className="p-4 bg-yellow-600 rounded-lg shadow-lg">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <img src="/TUTORIAL.png" alt="Tutorial" className="h-60 w-350" />
             </div>
             <iframe
-              className="aspect-video w-350"
+              className="aspect-video w-350 mt-4"
               src="https://www.youtube.com/embed/DYl2STTuX-Q"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-
           </section>
         </main>
       </div>
