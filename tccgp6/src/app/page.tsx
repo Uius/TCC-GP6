@@ -63,7 +63,7 @@ export default function HomePage() {
               </div>
               <div className="flex flex-row">
                 <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="/notifica" className="block">Notificações</a>
+                <a href="/notificacoes" className="block">Notificações</a>
               </div>
             </nav>
           </div>
