@@ -100,8 +100,8 @@ export default function NotificacoesPage() {
                 <div className="flex items-center gap-3">
                   <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
                   <div>
-                    <p className="font-bold">ALERTA NO ESTOQUE</p>
-                    <p className="text-sm text-gray-600">
+                    <p className="font-bold text-stone-950">ALERTA NO ESTOQUE</p>
+                    <p className="text-sm oklch(14.7% 0.004 49.25) text-stone-950">
                       O produto 'X' está apenas com 'Y' unidades!
                     </p>
                   </div>
@@ -117,8 +117,8 @@ export default function NotificacoesPage() {
                 <div className="flex items-center gap-3">
                   <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
                   <div>
-                    <p className="font-bold">ALERTA NO ESTOQUE</p>
-                    <p className="text-sm text-gray-600">
+                    <p className="font-bold text-stone-950">ALERTA NO ESTOQUE</p>
+                    <p className="text-sm oklch(14.7% 0.004 49.25) text-stone-950">
                       O produto 'X' está apenas com 'Y' unidades!
                     </p>
                   </div>
