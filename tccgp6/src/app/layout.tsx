@@ -16,10 +16,9 @@ export const metadata: Metadata = {
   title: "Trust Manager",
   description: "Sistema desenvolvido por Arthur Amatti, Victor Hugo e William Rodrigues",
   icons: {
-    icon: "/LOGOLEAO.png",       // arquivo que você colocou em public/
-    shortcut: "/LOGOLEAO.png",   // ícone rápido
-    apple: "/apple-touch-icon.png", // se quiser ícone para iOS
-  },
+    icon: "/LOGOLEAO.png",       
+    shortcut: "/LOGOLEAO.png",   
+  }
 };
 
 export default function RootLayout({
