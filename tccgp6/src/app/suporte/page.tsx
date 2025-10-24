@@ -6,10 +6,10 @@ export default function HomePage() {
   const { time, date } = useClock()
 
   return (
-    <div className="h-auto text-white">
+    <div className="min-h-screen text-white">
 
-      {/* HEADER */}
-      <header className="relative bg-neutral-900 flex justify-between items-center h-20 px-6">
+      {/* HEADER (padronizado: fixo) */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-neutral-900 flex justify-between items-center h-20 px-6">
 
         <img
           src="/LOGOBRANCA.png"
@@ -38,64 +38,68 @@ export default function HomePage() {
         </div>
       </header>
 
-      <div className="flex">
-
-        {/* Sidebar */}
-        <aside className="w-64 bg-yellow-600 flex flex-col justify-between p-4">
-          <div>
-            <nav className="space-y-4 text-black font-semibold">
-              <div className="flex flex-row">
-                <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="cadastro" className="block">Cadastro de Clientes</a>
-              </div>
-              <div className="flex flex-row">
-                <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="relatorios" className="block">Relatórios</a>
-              </div>
-              <div className="flex flex-row">
-                <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="orcamentos" className="block">Orçamentos</a>
-              </div>
-              <div className="flex flex-row">
-                <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="notificacoes" className="block">Notificações</a>
-              </div>
-            </nav>
-          </div>
-          <div className="text-black flex items-center gap-2">
-            <span  className="text-sm">Ferramentas</span>
-            <a href="ferramentas" className="block">Notificações</a>
-            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
-          </div>
-        </aside>
-
-        {/* Main Content */}
-        <main className="flex-1 bg-yellow-600 p-8">
-          <div className="bg-white p-8 rounded-lg shadow-2xl text-center">
-            <h1 className="text-4xl font-bold text-black mb-4">SUPORTE</h1>
-            <p className="text-gray-700 mb-8">
-              Está enfrentando problemas com o site?<br />
-              Entre em contato com nossa equipe para que possamos ajudar a<br></br> resolver sua situação o mais rápido possível.
-            </p>
-
-            <div className="space-y-4">
-              {["Arthur Amatti Buzzete", "Maria Júlia Costa", "Mariana Cassiano Xavier Da Costa", "Victor Hugo Garcia Da Costa Marquezzini", "William Feliks Rodrigues"].map((name, index) => (
-                <div key={index} className="flex items-center bg-gray-800 text-white rounded-lg p-4 shadow-lg">
-                  <div className="w-16 h-16 bg-gray-400 rounded-md mr-4"></div>
-                  <div className="text-left">
-                    <p className="font-bold">{name}</p>
-                    <p className="text-sm">E-mail:</p>
-                    <p className="text-sm">Telefone:</p>
-                  </div>
+      {/* Conteúdo abaixo do header */}
+      <div className="pt-20 w-full">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-[minmax(16rem,20rem)_1fr] min-h-[calc(100vh-5rem)]">
+          {/* Sidebar (sticky em md+) */}
+          <aside className="hidden md:flex md:flex-col md:w-64 lg:w-72 bg-yellow-600 p-4 md:sticky md:top-20 md:h-[calc(100vh-80px)]">
+            <div>
+              <nav className="space-y-4 text-black font-semibold">
+                <div className="flex flex-row">
+                  <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6 mr-2" />
+                  <a href="cadastro" className="block">Cadastro de Clientes</a>
                 </div>
-              ))}
+                <div className="flex flex-row">
+                  <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
+                  <a href="relatorios" className="block">Relatórios</a>
+                </div>
+                <div className="flex flex-row">
+                  <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6 mr-2" />
+                  <a href="orcamentos" className="block">Orçamentos</a>
+                </div>
+                <div className="flex flex-row">
+                  <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6 mr-2" />
+                  <a href="notificacoes" className="block">Notificações</a>
+                </div>
+              </nav>
             </div>
+            <div className="text-black flex items-center gap-2">
+              <a href="ferramentas" className="block">Ferramentas</a>
+              <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
+            </div>
+          </aside>
 
-            <p className="text-xs text-gray-500 mt-6">
-              Caso o profissional de suporte esteja indisponível, pedimos sua paciência e compreensão.
-            </p>
-          </div>
-        </main>
+          {/* Divisor fino */}
+          <div className="hidden md:block md:w-px bg-white/20" />
+
+          {/* Main (conteúdo interno mantido) */}
+          <main className="flex-1 bg-yellow-600 p-8">
+            <div className="bg-white p-8 rounded-lg shadow-2xl text-center">
+              <h1 className="text-4xl font-bold text-black mb-4">SUPORTE</h1>
+              <p className="text-gray-700 mb-8">
+                Está enfrentando problemas com o site?<br />
+                Entre em contato com nossa equipe para que possamos ajudar a<br></br> resolver sua situação o mais rápido possível.
+              </p>
+
+              <div className="space-y-4">
+                {["Arthur Amatti Buzzete", "Maria Júlia Costa", "Mariana Cassiano Xavier Da Costa", "Victor Hugo Garcia Da Costa Marquezzini", "William Feliks Rodrigues"].map((name, index) => (
+                  <div key={index} className="flex items-center bg-gray-800 text-white rounded-lg p-4 shadow-lg">
+                    <div className="w-16 h-16 bg-gray-400 rounded-md mr-4"></div>
+                    <div className="text-left">
+                      <p className="font-bold">{name}</p>
+                      <p className="text-sm">E-mail:</p>
+                      <p className="text-sm">Telefone:</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-xs text-gray-500 mt-6">
+                Caso o profissional de suporte esteja indisponível, pedimos sua paciência e compreensão.
+              </p>
+            </div>
+          </main>
+        </div>
       </div>
     </div>
   )

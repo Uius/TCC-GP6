@@ -9,45 +9,50 @@ export default function NotificacoesPage() {
   return (
     <div className="min-h-screen flex flex-col text-white">
       {/* HEADER (fixo) */}
-      <header className="fixed top-0 left-0 right-0 z-30 bg-neutral-900 flex justify-between items-center h-20 px-6">
-        <img
-          src="/LOGOBRANCA.png"
-          alt="Logo"
-          className="h-22 w-40 absolute left-6"
-        />
+    <header className="fixed top-0 left-0 right-0 z-50 bg-neutral-900 flex items-center justify-between h-24 px-12 shadow-md">
+  {/* LOGO */}
+  <div className="flex items-center gap-4">
+    <img src="/LOGOBRANCA.png" alt="Logo" className="h-20 w-auto" />
+  </div>
 
-        <div className="flex items-center gap-3 relative z-10 ml-20 pl-[180]">
-          <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-          <span className="uppercase text-sm tracking-wide">USERNAME</span>
-        </div>
+  {/* MENU + HORA */}
+  <div className="flex items-center gap-12">
+    {/* MENU */}
+    <nav className="hidden md:flex gap-8 text-base uppercase tracking-wide font-semibold">
+      <a href="/" className="text-white hover:text-yellow-500 transition">
+        Home
+      </a>
+      <a href="/estoque" className="text-white hover:text-yellow-500 transition">
+        Estoque
+      </a>
+      <a href="/suporte" className="text-white hover:text-yellow-500 transition">
+        Suporte
+      </a>
+    </nav>
 
-        <div className="flex items-center gap-6">
-          <nav className="flex gap-6 text-sm">
-            <a href="/" className="text-white py-2 px-4">
-              HOME
-            </a>
-            <a href="/estoque" className="text-white py-2 px-4">
-              ESTOQUE
-            </a>
-            <a href="/suporte" className="text-white py-2 px-4">
-              SUPORTE
-            </a>
-          </nav>
-          <div className="text-right text-xs leading-4">
-            <div className="flex items-center">
-              <img src="/ICONETEMPO.png" alt="Time" className="w-4 h-4 mr-2" />
-              <div>{time}</div>
-            </div>
-            <div>{date}</div>
+    {/* HORA E DATA */}
+    <div className="text-right text-sm leading-5 hidden md:block">
+      <div className="flex items-center gap-2 justify-end">
+        <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5" />
+        <div>{time}</div>
+      </div>
+      <div>{date}</div>
+    </div>
+  </div>
+    <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
+            <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8 lg:w-9 lg:h-9" />
+            <span className="uppercase text-sm tracking-wide lg:text-base">USERNAME</span>
           </div>
-        </div>
-      </header>
+          </div>
+</header>
 
       {/* CONTEÚDO: wrapper responsivo (sidebar md+ + main flexível) */}
       <div className="flex flex-1 pt-20 min-h-0">
         {/* Sidebar: visível em md+, sticky para não ficar sob o header */}
-        <aside className="hidden md:block md:w-72 lg:w-80 bg-yellow-600 flex flex-col justify-between p-4 md:sticky md:top-20 md:h-[calc(100vh-80px)] text-black">
+        <aside className="hidden md:block md:w-72 lg:w-80 bg-yellow-600 flex flex-col justify-start p-4 md:sticky md:top-20 md:h-[calc(100vh-80px)] text-black">
           <div>
+            
             <nav className="space-y-4 text-black font-semibold">
               <div className="flex flex-row">
                 <img
@@ -75,7 +80,7 @@ export default function NotificacoesPage() {
                   alt=""
                   className="w-6 h-6 mr-2"
                 />
-                <a href="#" className="block">
+                <a href="/orcamentos" className="block">
                   Orçamentos
                 </a>
               </div>
@@ -89,21 +94,14 @@ export default function NotificacoesPage() {
                   Notificações
                 </a>
               </div>
+              
             </nav>
-          </div>
-
-          <div className="text-black flex items-center gap-2">
-            <span className="text-sm">Ferramentas</span>
-            <img
-              src="/ICONECONFIG.png"
-              alt="Ferramentas"
-              className="h-6 w-6"
-            />
           </div>
         </aside>
 
-        {/* Divisor vertical (desktop) */}
-        <div className="hidden md:block md:w-0.5 lg:w-1 bg-white/20" />
+        {/* Divisor vertical (desktop) - agora com altura alinhada ao sidebar/main */}
+          <div className="hidden lg:block w-1 bg-white/100" />
+        
 
         {/* Main Content — ocupa o restante, com scroll próprio */}
         <main className="flex-1 bg-yellow-600 p-6 md:p-8 overflow-auto min-h-0">
@@ -305,6 +303,14 @@ export default function NotificacoesPage() {
             </section>
           </div>
         </main>
+      </div>
+
+      {/* Ferramentas fixas no canto inferior esquerdo (igual padrão da home) */}
+      <div className="fixed left-4 bottom-4 md:left-8 md:bottom-8 z-40">
+        <div className="bg-yellow-600 text-black rounded-lg p-3 flex items-center gap-2 shadow-md md:rounded-md">
+          <span className="text-sm font-semibold">Ferramentas</span>
+          <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
+        </div>
       </div>
     </div>
   );

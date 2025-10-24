@@ -78,11 +78,11 @@ export default function HomePage() {
           </div>
           <div className="flex items-center gap-2">
             <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
-            <a href="#" className="block">Relatórios</a>
+            <a href="/relatorio" className="block">Relatórios</a>
           </div>
           <div className="flex items-center gap-2">
             <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6" />
-            <a href="#" className="block">Orçamentos</a>
+            <a href="/orcamentos" className="block">Orçamentos</a>
           </div>
           <div className="flex items-center gap-2">
             <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6" />
@@ -108,7 +108,7 @@ export default function HomePage() {
           <img
             src="/LOGOBRANCA.png"
             alt="Logo"
-            className="h-10 sm:h-20 w-28 sm:w-40 object-contain lg:h-24 lg:w-48 xl:h-28 xl:w-56"
+            className="h-10 sm:h-25 w-45"
           />
         </div>
 
@@ -171,13 +171,7 @@ export default function HomePage() {
                   className="w-full h-auto object-cover md:h-[420px] lg:h-[540px] xl:h-[620px]"
                 />
               </div>
-<<<<<<< HEAD
-              <div className="flex flex-row">
-                <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="/relatorio" className="block">Relatórios</a>
-=======
             </section>
-
             <section className="p-6">
               <div className="flex flex-col md:flex-row items-start justify-start gap-6">
                 <img
@@ -185,7 +179,7 @@ export default function HomePage() {
                   alt="Tutorial"
                   className="w-full h-auto md:h-[180px] lg:h-[240px]"
                 />
->>>>>>> f7ef55ab05d5286e8fd101163a5be1264fdb96e9
+
               </div>
               <div className="mt-6">
                 <iframe
