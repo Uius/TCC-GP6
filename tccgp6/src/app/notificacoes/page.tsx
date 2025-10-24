@@ -110,9 +110,21 @@ export default function NotificacoesPage() {
                     </div>
                   </div>
 
+<<<<<<< HEAD
                   <div className="flex gap-4">
                     <img src="/ICONEOLHO.png" alt="Detalhes" className="w-8 h-6 cursor-pointer" />
                     <img src="/ICONEX.png" alt="Excluir" className="w-6 h-6 cursor-pointer" />
+=======
+              {/* Repete outros cards aqui */}
+              <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+                <div className="flex items-center gap-3">
+                  <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
+                  <div>
+                    <p className="font-bold text-stone-950">ALERTA NO ESTOQUE</p>
+                    <p className="text-sm oklch(14.7% 0.004 49.25) text-stone-950">
+                      O produto 'X' está apenas com 'Y' unidades!
+                    </p>
+>>>>>>> 319e05cfb03914fb78168def4bc37e9efafaad14
                   </div>
                 </div>
 
@@ -127,9 +139,20 @@ export default function NotificacoesPage() {
                     </div>
                   </div>
 
+<<<<<<< HEAD
                   <div className="flex gap-4">
                     <img src="/ICONEOLHO.png" alt="Detalhes" className="w-8 h-6 cursor-pointer" />
                     <img src="/ICONEX.png" alt="Excluir" className="w-6 h-6 cursor-pointer" />
+=======
+              <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+                <div className="flex items-center gap-3">
+                  <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
+                  <div>
+                    <p className="font-bold text-stone-950">ALERTA NO ESTOQUE</p>
+                    <p className="text-sm oklch(14.7% 0.004 49.25) text-stone-950">
+                      O produto 'X' está apenas com 'Y' unidades!
+                    </p>
+>>>>>>> 319e05cfb03914fb78168def4bc37e9efafaad14
                   </div>
                 </div>
 

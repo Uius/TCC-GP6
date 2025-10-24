@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client'
 
 import React, { useState } from 'react'
@@ -196,3 +197,21 @@ export default function HomePage() {
     </div>
   )
 }
+=======
+import "../globals.css";
+import ResponsiveLayout from "@/components/ResponsiveLayout";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="pt-br">
+      <body>
+        <ResponsiveLayout>{children}</ResponsiveLayout>
+      </body>
+    </html>
+  );
+}
+>>>>>>> 319e05cfb03914fb78168def4bc37e9efafaad14
