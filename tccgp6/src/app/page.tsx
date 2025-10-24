@@ -171,6 +171,11 @@ export default function HomePage() {
                   className="w-full h-auto object-cover md:h-[420px] lg:h-[540px] xl:h-[620px]"
                 />
               </div>
+<<<<<<< HEAD
+              <div className="flex flex-row">
+                <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
+                <a href="/relatorio" className="block">Relatórios</a>
+=======
             </section>
 
             <section className="p-6">
@@ -180,6 +185,7 @@ export default function HomePage() {
                   alt="Tutorial"
                   className="w-full h-auto md:h-[180px] lg:h-[240px]"
                 />
+>>>>>>> f7ef55ab05d5286e8fd101163a5be1264fdb96e9
               </div>
               <div className="mt-6">
                 <iframe
