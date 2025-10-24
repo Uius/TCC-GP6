@@ -46,24 +46,25 @@ export default function HomePage() {
             <nav className="space-y-4 text-black font-semibold">
               <div className="flex flex-row">
                 <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Cadastro de Clientes</a>
+                <a href="cadastro" className="block">Cadastro de Clientes</a>
               </div>
               <div className="flex flex-row">
                 <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Relatórios</a>
+                <a href="relatorios" className="block">Relatórios</a>
               </div>
               <div className="flex flex-row">
                 <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Orçamentos</a>
+                <a href="orcamentos" className="block">Orçamentos</a>
               </div>
               <div className="flex flex-row">
                 <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Notificações</a>
+                <a href="notificacoes" className="block">Notificações</a>
               </div>
             </nav>
           </div>
           <div className="text-black flex items-center gap-2">
-            <span className="text-sm">Ferramentas</span>
+            <span  className="text-sm">Ferramentas</span>
+            <a href="ferramentas" className="block">Notificações</a>
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
           </div>
         </aside>

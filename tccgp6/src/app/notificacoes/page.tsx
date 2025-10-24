@@ -1,4 +1,3 @@
-// ...existing code...
 'use client'
 
 import React from 'react'
@@ -39,11 +38,11 @@ export default function NotificacoesPage() {
         </div>
       </header>
 
-      {/* CONTEÚDO: wrapper com padding-top para o header fixo */}
-      <div className="flex flex-1 overflow-hidden pt-20">
+      {/* CONTEÚDO: wrapper responsivo (sidebar md+ + main flexível) */}
+      <div className="flex flex-1 pt-20 min-h-0">
 
-        {/* Sidebar (fixa abaixo do header) */}
-        <aside className="fixed top-20 left-0 bottom-0 w-72 bg-yellow-600 flex flex-col justify-between p-4">
+        {/* Sidebar: visível em md+, sticky para não ficar sob o header */}
+        <aside className="hidden md:block md:w-72 lg:w-80 bg-yellow-600 flex flex-col justify-between p-4 md:sticky md:top-20 md:h-[calc(100vh-80px)] text-black">
           <div>
             <nav className="space-y-4 text-black font-semibold">
               <div className="flex flex-row">
@@ -71,67 +70,72 @@ export default function NotificacoesPage() {
           </div>
         </aside>
 
-        {/* Main Content — deslocado à direita da sidebar e com scroll próprio */}
-        <main className="flex-1 bg-yellow-600 flex justify-center items-start p-10 overflow-auto min-h-0 ml-72">
-          <section className="bg-white rounded-lg shadow-2xl p-8 w-full max-w-4xl">
-            <h2 className="text-2xl font-bold text-center mb-6">NOTIFICAÇÕES:</h2>
+        {/* Divisor vertical (desktop) */}
+        <div className="hidden md:block md:w-0.5 lg:w-1 bg-white/20" />
 
-            <div className="space-y-4">
-              {/* Card de notificação */}
-              <div className="flex items-center w-full justify-between bg-white p-4 rounded-lg shadow">
-                <div className="flex items-center gap-3">
-                  <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
-                  <div>
-                    <p className="font-bold text-stone-950">ALERTA NO ESTOQUE</p>
-                    <p className="text-sm oklch(14.7% 0.004 49.25) text-stone-950">
-                      O produto 'X' está apenas com 'Y' unidades!
-                    </p>
+        {/* Main Content — ocupa o restante, com scroll próprio */}
+        <main className="flex-1 bg-yellow-600 p-6 md:p-8 overflow-auto min-h-0">
+          <div className="w-full max-w-5xl mx-auto">
+            <section className="bg-white rounded-lg shadow-2xl p-8 w-full">
+              <h2 className="text-2xl font-bold text-center mb-6">NOTIFICAÇÕES:</h2>
+
+              <div className="space-y-4">
+                {/* Card de notificação */}
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow">
+                  <div className="flex items-center gap-3">
+                    <img src="/ICONEVALIDADE.png" alt="Alerta" className="w-10 h-10" />
+                    <div>
+                      <p className="font-bold text-stone-950">ALERTA NO ESTOQUE</p>
+                      <p className="text-sm text-stone-800">
+                        O produto 'X' está apenas com 'Y' unidades!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 mt-4 md:mt-0">
+                    <img src="/ICONEOLHO.png" alt="Detalhes" className="w-8 h-6 cursor-pointer" />
+                    <img src="/ICONEX.png" alt="Excluir" className="w-6 h-6 cursor-pointer" />
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <img src="/ICONEOLHO.png" alt="Detalhes" className="w-8 h-6 cursor-pointer" />
-                  <img src="/ICONEX.png" alt="Excluir" className="w-6 h-6 cursor-pointer" />
-                </div>
-              </div>
+                {/* Repete outros cards aqui (mantive estrutura) */}
+                <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+                  <div className="flex items-center gap-3">
+                    <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
+                    <div>
+                      <p className="font-bold">ALERTA NO ESTOQUE</p>
+                      <p className="text-sm text-gray-600">
+                        O produto 'X' está apenas com 'Y' unidades!
+                      </p>
+                    </div>
+                  </div>
 
-              {/* Repete outros cards aqui */}
-              <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-                <div className="flex items-center gap-3">
-                  <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
-                  <div>
-                    <p className="font-bold">ALERTA NO ESTOQUE</p>
-                    <p className="text-sm text-gray-600">
-                      O produto 'X' está apenas com 'Y' unidades!
-                    </p>
+                  <div className="flex gap-4">
+                    <img src="/ICONEOLHO.png" alt="Detalhes" className="w-8 h-6 cursor-pointer" />
+                    <img src="/ICONEX.png" alt="Excluir" className="w-6 h-6 cursor-pointer" />
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <img src="/ICONEOLHO.png" alt="Detalhes" className="w-8 h-6 cursor-pointer" />
-                  <img src="/ICONEX.png" alt="Excluir" className="w-6 h-6 cursor-pointer" />
-                </div>
-              </div>
+                <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow">
+                  <div className="flex items-center gap-3">
+                    <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
+                    <div>
+                      <p className="font-bold">ALERTA NO ESTOQUE</p>
+                      <p className="text-sm text-gray-600">
+                        O produto 'X' está apenas com 'Y' unidades!
+                      </p>
+                    </div>
+                  </div>
 
-              <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow">
-                <div className="flex items-center gap-3">
-                  <img src="/ICONEALERTA.png" alt="Alerta" className="w-10 h-10" />
-                  <div>
-                    <p className="font-bold">ALERTA NO ESTOQUE</p>
-                    <p className="text-sm text-gray-600">
-                      O produto 'X' está apenas com 'Y' unidades!
-                    </p>
+                  <div className="flex gap-4">
+                    <img src="/ICONEOLHO.png" alt="Detalhes" className="w-8 h-6 cursor-pointer" />
+                    <img src="/ICONEX.png" alt="Excluir" className="w-6 h-6 cursor-pointer" />
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <img src="/ICONEOLHO.png" alt="Detalhes" className="w-8 h-6 cursor-pointer" />
-                  <img src="/ICONEX.png" alt="Excluir" className="w-6 h-6 cursor-pointer" />
-                </div>
               </div>
-
-            </div>
-          </section>
+            </section>
+          </div>
         </main>
 
       </div>
