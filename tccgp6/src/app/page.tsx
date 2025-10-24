@@ -86,7 +86,7 @@ export default function HomePage() {
           </div>
           <div className="flex items-center gap-2">
             <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6" />
-            <a href="#" className="block">Notificações</a>
+            <a href="/notificacoes" className="block">Notificações</a>
           </div>
         </nav>
       </div>
