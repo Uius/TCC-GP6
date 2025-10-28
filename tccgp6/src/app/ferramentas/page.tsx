@@ -1,42 +1,64 @@
+// ...existing code...
 'use client'
 
 import React from 'react'
 import { useClock } from '@/hooks/useClock'
+import { useFontSize } from "@/hooks/useFontSize";
 
-export default function FerramentaPage() {
-  const { time, date } = useClock()
+  export default function FerramentaPage() {
+    const { time, date } = useClock()
+    const { size, setSize } = useFontSize();
 
+<<<<<<< HEAD
   return (
     <div className="min-h-screen flex flex-col text-white">
       {/* HEADER (padronizado) */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-neutral-900 flex justify-between items-center h-20 px-6">
         <img src="/LOGOBRANCA.png" alt="Logo" className="h-10 sm:h-12 w-auto" />
+=======
+    return (
+      <div className="min-h-screen flex flex-col text-white bg-yellow-600">
+        {/* HEADER (fixo) */}
+        <header className="fixed top-0 left-0 right-0 z-30 bg-neutral-900 flex justify-between items-center h-20 px-6">
+          <img
+            src="/LOGOBRANCA.png"
+            alt="Logo"
+            className="h-22 w-40 absolute left-6"
+          />
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
 
-        <div className="flex items-center gap-3 relative z-10 ml-20 pl-[180]">
-          <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-          <span className="uppercase text-sm tracking-wide">USERNAME</span>
-        </div>
-
-        <div className="flex items-center gap-6">
-          <nav className="flex gap-6 text-sm">
-            <a href="/" className="text-white py-2 px-4">HOME</a>
-            <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
-            <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
-          </nav>
-          <div className="text-right text-xs leading-4">
-            <div className="flex items-center">
-              <img src="/ICONETEMPO.png" alt="Time" className="w-4 h-4 mr-2" />
-              <div>{time}</div>
-            </div>
-            <div>{date}</div>
+          <div className="flex items-center gap-3 relative z-10 ml-20 pl-[180]">
+            <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
+            <span className="uppercase text-sm tracking-wide">USERNAME</span>
           </div>
-        </div>
-      </header>
 
+<<<<<<< HEAD
       {/* Conteúdo abaixo do header */}
       <div className="pt-20 w-full">
         <div className="w-full grid grid-cols-1 lg:grid-cols-[minmax(16rem,20rem)_1fr] min-h-[calc(100vh-5rem)]">
           <aside className="hidden md:flex md:flex-col md:w-64 lg:w-72 bg-yellow-600 flex-shrink-0 p-4 md:sticky md:top-20 md:h-[calc(100vh-80px)]">
+=======
+          <div className="flex items-center gap-6">
+            <nav className="flex gap-6 text-sm">
+              <a href="/" className="text-white py-2 px-4">HOME</a>
+              <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
+              <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
+            </nav>
+            <div className="text-right text-xs leading-4">
+              <div className="flex items-center">
+                <img src="/ICONETEMPO.png" alt="Time" className="w-4 h-4 mr-2" />
+                <div>{time}</div>
+              </div>
+              <div>{date}</div>
+            </div>
+          </div>
+        </header>
+
+        {/* CONTEÚDO */}
+        <div className="flex flex-1 overflow-hidden pt-20">
+          {/* Sidebar */}
+          <aside className="fixed top-20 left-0 bottom-0 w-72 bg-yellow-600 flex flex-col justify-between p-4">
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
             <div>
               <nav className="space-y-4 text-black font-semibold">
                 <div className="flex flex-row">
@@ -58,12 +80,17 @@ export default function FerramentaPage() {
               </nav>
             </div>
 
+<<<<<<< HEAD
             <div className="text-black flex items-center gap-2">
+=======
+            <div className="text-black flex items-center gap-2 underline font-bold" >
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
               <span className="text-sm">Ferramentas</span>
               <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
             </div>
           </aside>
 
+<<<<<<< HEAD
           <div className="hidden md:block md:w-px bg-white/10" />
 
           <main className="flex-1 bg-yellow-600 p-10 overflow-auto min-h-0">
@@ -77,12 +104,30 @@ export default function FerramentaPage() {
                   {/* Linha: Escolher Tema */}
                   <div className="flex items-center gap-4">
                     {/* Espaço para imagem/ícone (substitua src pela sua imagem) */}
+=======
+          {/* Main Content */}
+          <main className="flex-1 flex justify-center items-start p-12 overflow-auto min-h-0 ml-72">
+            {/* central container branco com borda e sombra */}
+            <section className="w-full max-w-5xl bg-white rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] p-10 border-8 border-yellow-600">
+              <h2 className="text-4xl font-extrabold text-center mb-8 text-black tracking-widest">FERRAMENTAS:</h2>
+
+              {/* Seção Visual */}
+              <div className="mb-10 border-2 border-black rounded-lg p-6 bg-white">
+                <h3 className="text-2xl font-bold text-center mb-6 text-black">VISUAL</h3>
+                <div className="space-y-6">
+                  {/* Linha: Escolher Tema */}
+                  <div className="flex items-center gap-6">
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
                     <div className="w-12 h-12 flex items-center justify-center rounded-md bg-gray-100">
                       <img src="/SOL.png" alt="Tema" className="w-8 h-8" />
                     </div>
 
                     <div className="flex-1 flex items-center justify-between gap-4">
+<<<<<<< HEAD
                       <label className="text-black font-medium">Escolher Tema:</label>
+=======
+                      <label className="text-black font-bold">Escolher Tema:</label>
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
 
                       <div className="relative">
                         <select
@@ -92,7 +137,10 @@ export default function FerramentaPage() {
                           <option>Claro</option>
                           <option>Escuro</option>
                         </select>
+<<<<<<< HEAD
                         {/* seta customizada */}
+=======
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
                         <svg className="pointer-events-none absolute right-3 top-1/2 w-4 h-4 text-gray-500 -translate-y-1/2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clipRule="evenodd" />
                         </svg>
@@ -101,13 +149,18 @@ export default function FerramentaPage() {
                   </div>
 
                   {/* Linha: Tamanho da Letra */}
+<<<<<<< HEAD
                   <div className="flex items-center gap-4">
                     {/* Espaço para imagem/ícone (substitua src pela sua imagem) */}
+=======
+                  <div className="flex items-center gap-6">
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
                     <div className="w-12 h-12 flex items-center justify-center rounded-md bg-gray-100">
                       <img src="/Aa.png" alt="Tamanho da Letra" className="w-8 h-6" />
                     </div>
 
                     <div className="flex-1 flex items-center justify-between gap-4">
+<<<<<<< HEAD
                       <label className="text-black font-medium">Tamanho da Letra:</label>
 
                       <div className="relative">
@@ -118,6 +171,22 @@ export default function FerramentaPage() {
                           <option>Pequeno</option>
                           <option> Médio</option>
                           <option>Grande</option>
+=======
+                      <label className="text-black font-bold">Tamanho da Letra:</label>
+
+                      <div className="relative">
+                        <select
+                          value={size}
+                          onChange={(e) =>
+                            setSize(e.target.value as "small" | "medium" | "large")
+                          }
+                          aria-label="Tamanho da Letra"
+                          className="appearance-none bg-white text-black border border-gray-300 rounded px-4 py-2 pr-8 w-48"
+                        >
+                          <option value={"small"}>Pequeno</option>
+                          <option value={"medium"}>Médio</option>
+                          <option value={"large"}>Grande</option>
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
                         </select>
                         <svg className="pointer-events-none absolute right-3 top-1/2 w-4 h-4 text-gray-500 -translate-y-1/2" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                           <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clipRule="evenodd" />
@@ -129,6 +198,7 @@ export default function FerramentaPage() {
               </div>
 
               {/* Seção Ações */}
+<<<<<<< HEAD
               <div>
                 <h3 className="text-lg font-semibold mb-4 text-black">AÇÕES</h3>
                 <div className="grid grid-cols-3 gap-4">
@@ -144,6 +214,30 @@ export default function FerramentaPage() {
                   <button className="flex flex-col items-center justify-center p-4 border rounded-lg hover:bg-gray-50">
                     <img src="/CODIGO.png" alt="Backup" className="w-12 h-12 mb-2" />
                     <span className="text-lg text-black">Gerador de etiqueta/Codigo</span>
+=======
+              <div className="border-2 border-black rounded-lg p-6 bg-white">
+                <h3 className="text-2xl font-bold text-center mb-6 text-black">AÇÕES</h3>
+                <div className="grid grid-cols-3 gap-6">
+                  <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-md hover:shadow-lg">
+                    <div className=" p-4 mb-3">
+                      <img src="/NUVEM.png" alt="Impressão" className="w-15 h-12" />
+                    </div>
+                    <span className="text-sm font-semibold text-black text-center">Importar/Exportar Dados</span>
+                  </button>
+
+                  <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-md hover:shadow-lg">
+                    <div className=" p-4 mb-3">
+                      <img src="/CALCULADORA.png" alt="Organizar" className="w-12 h-15" />
+                    </div>
+                    <span className="text-sm font-semibold text-black text-center">Calculadora Financeira</span>
+                  </button>
+
+                  <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-md hover:shadow-lg">
+                    <div className=" p-4 mb-3">
+                      <img src="/CODIGO.png" alt="Backup" className="w-15 h-15" />
+                    </div>
+                    <span className="text-sm font-semibold text-black text-center">Gerador de etiqueta/Código</span>
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
                   </button>
                 </div>
               </div>
@@ -151,6 +245,6 @@ export default function FerramentaPage() {
           </main>
         </div>
       </div>
-    </div>
-  )
-}
+    )
+  }
+// ...existing code...

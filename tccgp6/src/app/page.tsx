@@ -171,6 +171,14 @@ export default function HomePage() {
                   className="w-full h-auto object-cover md:h-[420px] lg:h-[540px] xl:h-[620px]"
                 />
               </div>
+<<<<<<< HEAD
+=======
+
+              <div className="flex flex-row">
+                <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
+                <a href="/relatorio" className="block">Relatórios</a>
+              </div>
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
             </section>
             <section className="p-6">
               <div className="flex flex-col md:flex-row items-start justify-start gap-6">

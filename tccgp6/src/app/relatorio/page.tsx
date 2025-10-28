@@ -41,8 +41,8 @@ export default function RelatorioPage() {
       {/* CONTEÚDO: wrapper com padding-top para o header fixo */}
       <div className="flex flex-1 overflow-hidden pt-20">
 
-        {/* Sidebar (fixa abaixo do header) */}
-        <aside className="fixed top-20 left-0 bottom-0 w-72 bg-yellow-600 flex flex-col justify-between p-4">
+    {/* Sidebar - agora com classes responsivas */}
+  <aside className="hidden md:flex md:fixed md:top-20 md:left-0 md:bottom-0 md:w-72 bg-yellow-600 flex-col justify-between p-4">
           <div>
             <nav className="space-y-4 text-black font-semibold">
               <div className="flex flex-row items-center">
@@ -50,9 +50,9 @@ export default function RelatorioPage() {
                 <a href="#" className="block">Cadastro de Clientes</a>
               </div>
 
-              <div className="flex flex-row items-center bg-black/10 rounded-md p-2">
+              <div className="flex flex-row items-center  rounded-md p-2">
                 <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="/relatorio" className="block">Relatórios</a>
+                <a href="/relatorio" className="block underline">Relatórios</a>
               </div>
 
               <div className="flex flex-row items-center">
@@ -73,32 +73,35 @@ export default function RelatorioPage() {
           </div>
         </aside>
 
-        {/* Main Content — layout conforme imagem */}
-        <main className="flex-1 bg-yellow-600 flex justify-center items-start p-10 overflow-auto min-h-0 ml-72">
-          <section className="bg-white rounded-lg shadow-2xl p-10 w-full max-w-5xl">
-            <h2 className="text-4xl font-extrabold text-stone-900 mb-8">RELATÓRIOS:</h2>
+  {/* Divider vertical entre sidebar e main (apenas md+) */}
+  <div className="hidden md:block md:fixed md:top-20 md:left-72 md:bottom-0 w-[2px] bg-neutral-900/80 z-20" aria-hidden="true" />
 
-            <div className="space-y-8">
+        {/* Main Content - adaptado para mobile */}
+        <main className="flex-1 bg-yellow-600 flex justify-center items-start p-4 md:p-10 overflow-auto min-h-0 md:ml-72">
+          <section className="bg-white rounded-lg shadow-2xl p-4 md:p-10 w-full max-w-5xl">
+            <h2 className="text-2xl md:text-4xl font-extrabold text-stone-900 mb-4 md:mb-8">RELATÓRIOS:</h2>
+
+            <div className="space-y-4 md:space-y-8">
               <div>
-                <h3 className="text-sm font-bold text-stone-800 mb-2 uppercase">DIÁRIO</h3>
+                <h3 className="text-xs md:text-sm font-bold text-stone-800 mb-2 uppercase">DIÁRIO</h3>
                 <textarea
-                  className="w-full h-28 border border-stone-300 rounded-md p-4 resize-none bg-white"
+                  className="w-full text-black h-24 md:h-28 border border-stone-300 rounded-md p-3 md:p-4 resize-none bg-white text-sm md:text-base"
                   placeholder="Relatório diário..."
                 />
               </div>
 
               <div>
-                <h3 className="text-sm font-bold text-stone-800 mb-2 uppercase">SEMANAL</h3>
+                <h3 className="text-xs md:text-sm font-bold text-stone-800 mb-2 uppercase">SEMANAL</h3>
                 <textarea
-                  className="w-full h-28 border border-stone-300 rounded-md p-4 resize-none bg-white"
+                  className="w-full h-24 text-black md:h-28 border border-stone-300 rounded-md p-3 md:p-4 resize-none bg-white text-sm md:text-base"
                   placeholder="Relatório semanal..."
                 />
               </div>
 
               <div>
-                <h3 className="text-sm font-bold text-stone-800 mb-2 uppercase">MENSAL</h3>
+                <h3 className="text-xs md:text-sm font-bold text-stone-800 mb-2 uppercase">MENSAL</h3>
                 <textarea
-                  className="w-full h-28 border border-stone-300 rounded-md p-4 resize-none bg-white"
+                  className="w-full h-24 text-black md:h-28 border border-stone-300 rounded-md p-3 md:p-4 resize-none bg-white text-sm md:text-base"
                   placeholder="Relatório mensal..."
                 />
               </div>

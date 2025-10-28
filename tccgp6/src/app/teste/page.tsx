@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-'use client'
+"use client"
 
 import React, { useState } from 'react'
 import { useClock } from '@/hooks/useClock'
@@ -196,6 +195,7 @@ export default function HomePage() {
       </div>
     </div>
   )
+<<<<<<< HEAD
 }
 
 import "../globals.css";
@@ -215,3 +215,6 @@ export default function RootLayout({
   );
 }
 
+=======
+}
+>>>>>>> 68cbc4d5f5902e89cb1acb6a91b289cdc86daca8
