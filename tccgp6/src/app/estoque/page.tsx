@@ -313,11 +313,11 @@ export default function HomePage() {
               </div>
               <div className="flex flex-row">
                 <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Relatórios</a>
+                <a href="/relatorio" className="block">Relatórios</a>
               </div>
               <div className="flex flex-row">
                 <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Orçamentos</a>
+                <a href="/orcamentos" className="block">Orçamentos</a>
               </div>
               <div className="flex flex-row">
                 <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6 mr-2" />

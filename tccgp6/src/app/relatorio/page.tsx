@@ -57,7 +57,7 @@ export default function RelatorioPage() {
 
               <div className="flex flex-row items-center">
                 <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Orçamentos</a>
+                <a href="/orcamentos" className="block">Orçamentos</a>
               </div>
 
               <div className="flex flex-row items-center">

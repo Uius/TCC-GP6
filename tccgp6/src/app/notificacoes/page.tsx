@@ -65,7 +65,7 @@ export default function NotificacoesPage() {
                   alt=""
                   className="w-6 h-6 mr-2"
                 />
-                <a href="#" className="block">
+                <a href="/relatorio" className="block">
                   Relatórios
                 </a>
               </div>
@@ -75,7 +75,7 @@ export default function NotificacoesPage() {
                   alt=""
                   className="w-6 h-6 mr-2"
                 />
-                <a href="#" className="block">
+                <a href="/orcamentos" className="block">
                   Orçamentos
                 </a>
               </div>
