@@ -197,7 +197,7 @@ export default function HomePage() {
     </div>
   )
 }
-=======
+
 import "../globals.css";
 import ResponsiveLayout from "@/components/ResponsiveLayout";
 
@@ -214,4 +214,4 @@ export default function RootLayout({
     </html>
   );
 }
->>>>>>> 319e05cfb03914fb78168def4bc37e9efafaad14
+
