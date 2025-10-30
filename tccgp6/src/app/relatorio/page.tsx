@@ -53,7 +53,7 @@ export default function RelatorioPage() {
             <nav className="space-y-4 text-black font-semibold">
               <div className="flex flex-row items-center">
                 <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Cadastro de Clientes</a>
+                <a href="/cadastrocliente" className="block">Cadastro de Clientes</a>
               </div>
 
               <div className="flex flex-row items-center  rounded-md p-2">

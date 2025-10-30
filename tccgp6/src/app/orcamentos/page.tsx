@@ -47,42 +47,31 @@ export default function OrcamentosPage() {
       {/* CONTEÚDO - sidebar + main */}
       <div className="flex flex-1 pt-20 min-h-0">
         {/* Sidebar (desktop) */}
-        <aside className="hidden md:flex md:flex-col md:w-72 lg:w-80 bg-yellow-600 text-black p-6 md:sticky md:top-20 md:h-[calc(100vh-80px)]">
-          <div className="flex-1">
-            <nav className="space-y-6 font-semibold">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
-                </div>
-                <a href="#">Cadastro de Clientes</a>
-              </div>
+        <aside className="w-72 bg-yellow-600 flex flex-col justify-between p-4 text-black h-[calc(100vh-5rem)] fixed top-20 left-0">
+          {/* Menu lateral */}
+          <nav className="space-y-5 font-semibold mt-6">
+            <div className="flex items-center gap-2">
+              <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
+              <a href="/cadastrocliente" className="block underline">Cadastro de Clientes</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
+              <a href="/relatorio" className="block">Relatórios</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6" />
+              <a href="/orcamentos" className="block">Orçamentos</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6" />
+              <a href="/notificacoes" className="block">Notificações</a>
+            </div>
+          </nav>
 
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
-                </div>
-                <a href="/relatorio">Relatórios</a>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6" />
-                </div>
-                <a href="/orcamentos">Orçamentos</a>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6" />
-                </div>
-                <a href="/notificacoes">Notificações</a>
-              </div>
-            </nav>
-          </div>
-
-          <div className="mt-6 flex items-center gap-3">
-            <img src="/ICONECONFIG.png" alt="Ferramentas" className="w-6 h-6" />
-            <span className="text-sm">Ferramentas</span>
+          {/* Rodapé da sidebar */}
+          <div className="flex items-center gap-2 mb-2">
+            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
+            <span className="text-sm font-medium">Ferramentas</span>
           </div>
         </aside>
 
