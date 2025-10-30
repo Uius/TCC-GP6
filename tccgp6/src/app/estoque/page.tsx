@@ -269,33 +269,36 @@ export default function HomePage() {
     <div className="h-auto">
 
       {/* HEADER */}
-      <header className="relative bg-neutral-900 flex justify-between items-center h-20 px-6 text-white">
-        {/* Logo no header */}
-        <img
-          src="/LOGOBRANCA.png"
-          alt="Logo"
-          className="h-22 w-40 absolute left-6"
-        />
-
-        {/* USERNAME por cima da logo */}
-        <div className="flex items-center gap-3 relative z-10 ml-20 pl-[180]">
-          <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-          <span className="uppercase text-sm tracking-wide">USERNAME</span>
+      <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50 flex items-center justify-between h-20 px-8">
+        {/* Logo */}
+        <div className="flex items-center">
+          <img
+            src="/LOGOBRANCA.png"
+            alt="Logo"
+            className="h-20 w-40 object-contain"
+          />
         </div>
 
-        {/* Menu + Data/Hora */}
+        {/* Menu principal */}
+        <nav className="flex gap-8 text-base font-semibold">
+          <a href="/" className="text-white py-2 px-4">HOME</a>
+          <a href="/estoque" className="text-white bg-zinc-800 py-2 px-4 underline rounded-sm">ESTOQUE</a>
+          <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
+        </nav>
+
+        {/* Usuário e hora */}
         <div className="flex items-center gap-6">
-          <nav className="flex gap-6 text-sm">
-            <a href="/" className="text-white py-2 px-4">HOME</a>
-            <a href="/estoque" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">ESTOQUE</a>
-            <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
-          </nav>
-          <div className="text-right text-xs leading-4">
-            <div className="flex items-center">
-              <img src="/ICONETEMPO.png" alt="Time" className="w-4 h-4 mr-2" />
-              <div>{time}</div>
+          <div className="flex items-center gap-3">
+            <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
+            <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
+          </div>
+          
+          <div className="text-right text-sm leading-4">
+            <div className="flex items-center justify-end">
+              <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5 mr-2" />
+              <span>{time}</span>
             </div>
-            <div>{date}</div>
+            <span>{date}</span>
           </div>
         </div>
       </header>
@@ -304,23 +307,26 @@ export default function HomePage() {
       <div className="flex">
 
         {/* Sidebar */}
-        <aside className="w-64 bg-yellow-600 flex flex-col justify-between p-4">
+        <aside className="w-64 bg-yellow-600 flex flex-col justify-between p-4 sticky top-20 self-start h-[calc(100vh-5rem)] overflow-auto">
           <div>
-            <nav className="space-y-4 text-black font-semibold">
-              <div className="flex flex-row">
-                <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6 mr-2" />
+            <nav className="flex flex-col space-y-6 text-black font-semibold">
+              <div className="flex items-center gap-3">
+                <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
                 <a href="#" className="block">Cadastro de Clientes</a>
               </div>
-              <div className="flex flex-row">
-                <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
+
+              <div className="flex items-center gap-3">
+                <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
                 <a href="/relatorio" className="block">Relatórios</a>
               </div>
-              <div className="flex flex-row">
-                <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6 mr-2" />
+
+              <div className="flex items-center gap-3">
+                <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6" />
                 <a href="/orcamentos" className="block">Orçamentos</a>
               </div>
-              <div className="flex flex-row">
-                <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6 mr-2" />
+
+              <div className="relative flex items-center gap-3">
+                <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6" />
                 <a href="/notificacoes" className="block">Notificações</a>
                 {produtosEstoqueBaixo > 0 && (
                   <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
@@ -337,8 +343,11 @@ export default function HomePage() {
           </div>
         </aside>
 
+        {/* Linha de divisão branca (18px) */}
+        <div className="w-[18px] bg-white sticky top-20 self-start h-[calc(100vh-5rem)]" aria-hidden="true" />
+
         {/* Main Content */}
-        <main className="flex-1 bg-yellow-600 p-8">
+        <main className="flex-1 bg-yellow-600 p-8 mt-20">
           <div className="bg-white p-8 rounded-lg shadow-2xl text-black">
 
             {/* Título */}
@@ -530,7 +539,7 @@ export default function HomePage() {
                                   <img src={p.img || '/placeholder.png'} alt={p.nome} className="w-16 h-16 object-contain" />
                                   <div>
                                     <p className="text-black font-medium text-lg">{p.nome}</p>
-                                    <p className={`${p.estoque <= p.estoqueMinimo ? 'text-red-600' : 'text-green-600'} text-base font-semibold`}>
+                                    <p className={`${p.estoque <= p.estoqueMinimo ? 'text-red-600' : 'text-orange-600'} text-base font-semibold`}>
                                       Em Estoque: <span className="text-black font-normal">{p.estoque} unidades</span>
                                       {p.estoque <= p.estoqueMinimo && (
                                         <span className="text-red-500 ml-2">(Abaixo do mínimo: {p.estoqueMinimo})</span>

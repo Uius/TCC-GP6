@@ -23,7 +23,7 @@ export default function HomePage() {
         <nav className="flex gap-8 text-base font-semibold">
           <a href="/" className="text-white py-2 px-4 rounded-sm">HOME</a>
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
-          <a href="/suporte" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">SUPORTE</a>
+          <a href="/suporte" className="text-white bg-zinc-800 py-2 px-4 underline rounded-sm">SUPORTE</a>
         </nav>
 
         {/* Usuário e hora */}
@@ -52,7 +52,7 @@ export default function HomePage() {
           <nav className="space-y-5 font-semibold mt-6">
             <div className="flex items-center gap-2">
               <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
-              <a href="#" className="block">Cadastro de Clientes</a>
+              <a href="/cadastrocliente" className="block">Cadastro de Clientes</a>
             </div>
             <div className="flex items-center gap-2">
               <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
@@ -127,13 +127,13 @@ export default function HomePage() {
                   photo: "/VICTOR.jpg"
                 },
                 {
-                  name: "William Feliks Rodrigues",
+                  name: "William Felixs Rodrigues",
                   email: "rodrigueswilliam657@gmail.com",
                   telefone: "(18) 99749-0860",
-                  photo: "/devs/william.jpg"
+                  photo: "/UIU.jpg"
                 }
               ].map((person, index) => (
-                <div key={index} className="flex items-center bg-gray-800 text-white rounded-lg p-4 shadow-lg hover:scale-[1.01] transition-transform">
+                <div key={index} className="flex items-center bg-zinc-800 text-white rounded-lg p-4 shadow-lg hover:scale-[1.01] transition-transform">
                   <img 
                     src={person.photo} 
                     alt={`Foto de ${person.name}`}

@@ -52,7 +52,7 @@ export default function NotificacoesPage() {
           <nav className="space-y-5 font-semibold mt-6">
             <div className="flex items-center gap-2">
               <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
-              <a href="#" className="block">Cadastro de Clientes</a>
+              <a href="/cadastrocliente" className="block">Cadastro de Clientes</a>
             </div>
             <div className="flex items-center gap-2">
               <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
@@ -76,10 +76,15 @@ export default function NotificacoesPage() {
         </aside>
 
         {/* Divisor vertical (desktop) */}
-        <div className="hidden md:block md:w-0.5 lg:w-1 bg-white/20" />
+        {/* Linha branca fixa de 15px entre sidebar e main (visível a partir de md) */}
+        <div
+          className="hidden md:block fixed top-20 left-[18rem] h-[calc(100vh-5rem)] w-[15px] bg-white z-40"
+          aria-hidden="true"
+        />
 
         {/* Main Content — ocupa o restante, com scroll próprio */}
-        <main className="flex-1 bg-yellow-600 p-6 md:p-8 overflow-auto min-h-0">
+        {/* adiciona margem-left em md+ para não ficar sob a sidebar + divisor (18rem + 15px) */}
+        <main className="flex-1 bg-yellow-600 p-6 md:p-8 overflow-auto min-h-0 md:ml-[calc(18rem+15px)]">
           <div className="w-full max-w-5xl mx-auto">
             <section className="bg-white rounded-lg shadow-2xl p-8 w-full">
               <h2 className="text-2xl text-black font-bold text-center mb-6">

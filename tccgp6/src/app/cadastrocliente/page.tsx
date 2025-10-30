@@ -88,7 +88,7 @@ export default function HomePage() {
           <nav className="space-y-5 font-semibold mt-6">
             <div className="flex items-center gap-2">
               <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
-              <a href="#" className="block">Cadastro de Clientes</a>
+              <a href="/cadastrocliente" className="block underline">Cadastro de Clientes</a>
             </div>
             <div className="flex items-center gap-2">
               <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
@@ -114,7 +114,7 @@ export default function HomePage() {
         {/* Divider vertical branco entre sidebar e main */}
         <div
           aria-hidden="true"
-          className="w-[6px] bg-white h-[calc(100vh-5rem)] fixed top-20 left-72 z-40"
+          className="w-[18px] bg-white h-[calc(100vh-5rem)] fixed top-20 left-72 z-40"
         />
 
         {/* CONTEÚDO PRINCIPAL */}

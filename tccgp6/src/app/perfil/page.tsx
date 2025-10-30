@@ -201,7 +201,7 @@ export default function HomePage() {
       <button className="bg-red-700 text-white font-bold px-6 py-3 rounded-md hover:bg-red-800 transition">
         CANCELAR
       </button>
-      <button className="bg-yellow-500 text-black font-bold px-6 py-3 rounded-md hover:bg-yellow-600 transition">
+      <button className="bg-yellow-500 text-white font-bold px-6 py-3 rounded-md hover:bg-yellow-600 transition">
         SALVAR
       </button>
     </div>
@@ -210,6 +210,6 @@ export default function HomePage() {
 
        
       </div>
-    </div>
-  )
+    </div>
+)
 }
