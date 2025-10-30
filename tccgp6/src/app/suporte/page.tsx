@@ -84,8 +84,15 @@ export default function HomePage() {
         {/* CONTEÚDO PRINCIPAL */}
 
          {/* MAIN */}
-        <main className="flex-1 bg-yellow-600 overflow-y-auto p-8 xl:p-10">
-          <div className="bg-white p-8 rounded-lg shadow-2xl text-center max-w-5xl mx-auto">
+        <main
+          className={
+            // adiciona margem à esquerda para compensar a sidebar fixa + divider,
+            // transforma o main em flex container que centraliza o conteúdo
+            'flex-1 bg-yellow-600 overflow-y-auto p-8 xl:p-10 flex items-center justify-center ' +
+            'min-h-[calc(100vh-5rem)] ml-[calc(18rem+6px)]'
+          }
+        >
+          <div className="bg-white p-8 rounded-lg shadow-2xl text-center max-w-5xl w-full">
             <h1 className="text-4xl font-bold text-black mb-4">SUPORTE</h1>
             <p className="text-gray-700 mb-8">
               Está enfrentando problemas com o site?<br />
@@ -95,18 +102,47 @@ export default function HomePage() {
 
             <div className="space-y-4">
               {[
-                "Arthur Amatti Buzzete",
-                "Maria Júlia Costa",
-                "Mariana Cassiano Xavier Da Costa",
-                "Victor Hugo Garcia Da Costa Marquezini",
-                "William Feliks Rodrigues"
-              ].map((name, index) => (
+                {
+                  name: "Arthur Amatti Buzzete",
+                  email: "arthur.buzzete@email.com",
+                  telefone: "(11) 99999-1111",
+                  photo: "/devs/arthur.jpg"
+                },
+                {
+                  name: "Maria Júlia Costa",
+                  email: "maria.julia@email.com",
+                  telefone: "(11) 99999-2222",
+                  photo: "/devs/maria.jpg"
+                },
+                {
+                  name: "Mariana Cassiano Xavier Da Costa",
+                  email: "mariana.costa@email.com",
+                  telefone: "(11) 99999-3333",
+                  photo: "/devs/mariana.jpg"
+                },
+                {
+                  name: "Victor Hugo Garcia Da Costa Marquezini",
+                  email: "victor.marquezini@email.com",
+                  telefone: "(11) 99999-4444",
+                  photo: "/devs/victor.jpg"
+                },
+                {
+                  name: "William Feliks Rodrigues",
+                  email: "william.rodrigues@email.com",
+                  telefone: "(11) 99999-5555",
+                  photo: "/devs/william.jpg"
+                }
+              ].map((person, index) => (
                 <div key={index} className="flex items-center bg-gray-800 text-white rounded-lg p-4 shadow-lg hover:scale-[1.01] transition-transform">
-                  <div className="w-16 h-16 bg-gray-400 rounded-md mr-4 flex-shrink-0"></div>
+                  <img 
+                    src={person.photo} 
+                    alt={`Foto de ${person.name}`}
+                    className="w-16 h-16 rounded-md mr-4 flex-shrink-0 object-cover"
+                  />
                   <div className="text-left">
-                    <p className="font-bold">{name}</p>
-                    <p className="text-sm">E-mail:</p>
-                    <p className="text-sm">Telefone:</p>
+                    <p className="font-bold">{person.name}</p>
+                    <p className="text-sm">E-mail: {person.email}</p>
+                    <p className="text-sm">Telefone: {person.telefone}</p>
                   </div>
                 </div>
               ))}
