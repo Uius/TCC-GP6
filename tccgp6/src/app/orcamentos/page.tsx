@@ -9,24 +9,41 @@ export default function OrcamentosPage() {
   return (
     <div className="min-h-screen flex flex-col text-white bg-neutral-900">
       {/* HEADER */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-neutral-900 flex items-center h-20 px-6">
-        <div className="flex items-center gap-4">
-          <img src="/LOGOBRANCA.png" alt="Logo" className="h-10 w-auto" />
-          <span className="hidden md:inline text-sm uppercase tracking-wide">USERNAME</span>
+      <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50 flex items-center h-20 px-4 sm:px-6 lg:px-8">
+        {/* Logo: tamanho responsivo, maior em lg/xl */}
+        <div className="flex items-center">
+          <img
+            src="/LOGOBRANCA.png"
+            alt="Logo"
+            className="h-10 sm:h-20 w-28 sm:w-40 object-contain lg:h-24 lg:w-48 xl:h-28 xl:w-56"
+          />
         </div>
 
-        <nav className="ml-8 hidden md:flex gap-6 text-sm flex-1">
-          <a href="/" className="text-white">HOME</a>
-          <a href="/estoque" className="text-white">ESTOQUE</a>
-          <a href="/suporte" className="text-white">SUPORTE</a>
-        </nav>
+        {/* espaço entre logo e resto */}
+        <div className="flex-1" />
 
-        <div className="ml-auto text-right text-xs leading-4 hidden md:block">
-          <div className="flex items-center gap-2">
-            <img src="/ICONETEMPO.png" alt="Time" className="w-4 h-4" />
-            <div>{time}</div>
+        {/* BOTÃO HAMBURGER MOBILE */}
+
+        {/* USER + Menu + Data/Hora */}
+        <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
+            <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8 lg:w-9 lg:h-9" />
+            <span className="uppercase text-sm tracking-wide lg:text-base">USERNAME</span>
           </div>
-          <div>{date}</div>
+
+          <nav className="hidden sm:flex gap-6 text-sm lg:gap-8 lg:text-base">
+            <a href="/teste" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
+            <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
+            <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
+          </nav>
+
+          <div className="text-right text-xs leading-4 lg:text-sm">
+            <div className="flex items-center">
+              <img src="/ICONETEMPO.png" alt="Time" className="w-4 h-4 mr-2 lg:w-5 lg:h-5" />
+              <div>{time}</div>
+            </div>
+            <div>{date}</div>
+          </div>
         </div>
       </header>
 
@@ -47,14 +64,14 @@ export default function OrcamentosPage() {
                 <div className="w-8 h-8 flex items-center justify-center">
                   <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
                 </div>
-                <a href="#">Relatórios</a>
+                <a href="/relatorio">Relatórios</a>
               </div>
 
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 flex items-center justify-center">
                   <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6" />
                 </div>
-                <a href="#">Orçamentos</a>
+                <a href="/orcamentos">Orçamentos</a>
               </div>
 
               <div className="flex items-center gap-3">
