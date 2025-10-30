@@ -9,47 +9,12 @@ export default function OrcamentosPage() {
   return (
     <div className="min-h-screen flex flex-col text-white bg-neutral-900">
       {/* HEADER */}
-<<<<<<< HEAD
-      <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50 flex items-center h-20 px-4 sm:px-6 lg:px-8">
-        {/* Logo: tamanho responsivo, maior em lg/xl */}
-=======
       <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50 flex items-center justify-between h-20 px-8">
         {/* Logo */}
->>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
         <div className="flex items-center">
           <img
             src="/LOGOBRANCA.png"
             alt="Logo"
-<<<<<<< HEAD
-            className="h-10 sm:h-20 w-28 sm:w-40 object-contain lg:h-24 lg:w-48 xl:h-28 xl:w-56"
-          />
-        </div>
-
-        {/* espaço entre logo e resto */}
-        <div className="flex-1" />
-
-        {/* BOTÃO HAMBURGER MOBILE */}
-
-        {/* USER + Menu + Data/Hora */}
-        <div className="flex items-center gap-6">
-          <div className="flex items-center gap-3">
-            <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8 lg:w-9 lg:h-9" />
-            <span className="uppercase text-sm tracking-wide lg:text-base">USERNAME</span>
-          </div>
-
-          <nav className="hidden sm:flex gap-6 text-sm lg:gap-8 lg:text-base">
-            <a href="/teste" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
-            <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
-            <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
-          </nav>
-
-          <div className="text-right text-xs leading-4 lg:text-sm">
-            <div className="flex items-center">
-              <img src="/ICONETEMPO.png" alt="Time" className="w-4 h-4 mr-2 lg:w-5 lg:h-5" />
-              <div>{time}</div>
-            </div>
-            <div>{date}</div>
-=======
             className="h-20 w-40 object-contain"
           />
         </div>
@@ -74,7 +39,6 @@ export default function OrcamentosPage() {
               <span>{time}</span>
             </div>
             <span>{date}</span>
->>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
           </div>
         </div>
       </header>

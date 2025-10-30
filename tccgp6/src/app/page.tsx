@@ -35,11 +35,7 @@ export default function HomePage() {
 
           <div className="text-right text-sm leading-4">
             <div className="flex items-center justify-end">
-<<<<<<< HEAD
-              <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5 mr-3" />
-=======
               <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5 mr-2" />
->>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
               <span>{time}</span>
             </div>
             <span>{date}</span>
@@ -85,21 +81,13 @@ export default function HomePage() {
         />
 
         {/* CONTEÚDO PRINCIPAL */}
-<<<<<<< HEAD
-
-=======
->>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
         <main className="flex-1 bg-yellow-600 ml-72 p-10 min-h-[calc(100vh-5rem)] text-black">
           {/* Imagem principal */}
           <section className="mb-10">
             <img
               src="/HOMEVAMOSLA.png"
               alt="Vamos Lá"
-<<<<<<< HEAD
-              className="w-400 h-200  "
-=======
               className="w-full h-[400px] object-cover"
->>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
             />
           </section>
 
@@ -112,11 +100,7 @@ export default function HomePage() {
                 className="w-full h-auto mb-6"
               />
               <iframe
-<<<<<<< HEAD
-                className="w-full w-350 h-200  border-none"
-=======
                 className="w-full h-[420px] border-none"
->>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
                 src="https://www.youtube.com/embed/DYl2STTuX-Q"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -125,6 +109,6 @@ export default function HomePage() {
           </section>
         </main>
       </div>
-    </div>
-  )
+    </div>
+  )
 }
