@@ -22,7 +22,7 @@ export default function RelatorioPage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
-          <a href="#" className="text-white py-2 px-4 rounded-sm">HOME</a>
+          <a href="/" className="text-white py-2 px-4 rounded-sm">HOME</a>
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
           <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
         </nav>

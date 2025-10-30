@@ -21,13 +21,13 @@ export default function HomePage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
-          <a href="#" className="text-white py-2 px-4 rounded-sm">HOME</a>
+          <a href="/" className="text-white py-2 px-4 rounded-sm">HOME</a>
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
-          <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
+          <a href="/suporte" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">SUPORTE</a>
         </nav>
 
         {/* Usuário e hora */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-10">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
             <span className="uppercase text-base tracking-wide">USERNAME</span>
@@ -104,32 +104,32 @@ export default function HomePage() {
               {[
                 {
                   name: "Arthur Amatti Buzzete",
-                  email: "arthur.buzzete@email.com",
-                  telefone: "(11) 99999-1111",
-                  photo: "/devs/arthur.jpg"
+                  email: "abuzzettesec@gmail.com",
+                  telefone: "(18) 99825-6908",
+                  photo: "/ARTHUR.jpg"
                 },
                 {
                   name: "Maria Júlia Costa",
-                  email: "maria.julia@email.com",
-                  telefone: "(11) 99999-2222",
-                  photo: "/devs/maria.jpg"
+                  email: "mariajucosta2000@gmail.com",
+                  telefone: "(18) 99641-4946",
+                  photo: "/MAJU.jpg"
                 },
                 {
                   name: "Mariana Cassiano Xavier Da Costa",
                   email: "mariana.costa@email.com",
                   telefone: "(11) 99999-3333",
-                  photo: "/devs/mariana.jpg"
+                  photo: "/MARI.png"
                 },
                 {
                   name: "Victor Hugo Garcia Da Costa Marquezini",
-                  email: "victor.marquezini@email.com",
-                  telefone: "(11) 99999-4444",
-                  photo: "/devs/victor.jpg"
+                  email: "skyeemailprofissional@gmail.com",
+                  telefone: "(18) 99817-4419",
+                  photo: "/VICTOR.jpg"
                 },
                 {
                   name: "William Feliks Rodrigues",
-                  email: "william.rodrigues@email.com",
-                  telefone: "(11) 99999-5555",
+                  email: "rodrigueswilliam657@gmail.com",
+                  telefone: "(18) 99749-0860",
                   photo: "/devs/william.jpg"
                 }
               ].map((person, index) => (
