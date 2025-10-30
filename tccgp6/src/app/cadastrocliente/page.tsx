@@ -88,7 +88,7 @@ export default function HomePage() {
           <nav className="space-y-5 font-semibold mt-6">
             <div className="flex items-center gap-2">
               <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
-              <a href="/cadastrocliente" className="block underline">Cadastro de Clientes</a>
+              <a href="#" className="block">Cadastro de Clientes</a>
             </div>
             <div className="flex items-center gap-2">
               <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
@@ -118,7 +118,7 @@ export default function HomePage() {
         />
 
         {/* CONTEÚDO PRINCIPAL */}
-        <main className="flex-1 ml-[calc(18rem+6px)] p-8 pt-10 bg-yellow-600 min-h-[calc(100vh-5rem)]">
+        <main className="flex-1 ml-[calc(72px+6px)] p-8 pt-10 bg-yellow-600 min-h-[calc(100vh-5rem)]">
           <div className="max-w-4xl mx-auto space-y-6">
             {/* Accordion: Cadastrar novo usuario */}
             <div className="bg-white rounded-2xl p-6 relative">

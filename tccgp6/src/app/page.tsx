@@ -30,9 +30,9 @@ export default function HomePage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <span className="uppercase text-base tracking-wide">USERNAME</span>
+            <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
           </div>
-
+          
           <div className="text-right text-sm leading-4">
             <div className="flex items-center justify-end">
               <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5 mr-2" />
@@ -68,9 +68,9 @@ export default function HomePage() {
           </nav>
 
           {/* Rodapé da sidebar */}
-          <div className="flex items-center gap-2 mb-2">
-            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
-            <span className="text-sm font-medium">Ferramentas</span>
+          <div className="text-black flex items-center gap-2">
+            <a href="/ferramentas" className="block">Ferramentas</a>
+            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
           </div>
         </aside>
 
@@ -100,7 +100,7 @@ export default function HomePage() {
                 className="w-full h-auto mb-6"
               />
               <iframe
-                className="w-full h-[420px] border-none"
+                className="w-full h-full border-none"
                 src="https://www.youtube.com/embed/DYl2STTuX-Q"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

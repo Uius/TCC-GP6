@@ -21,7 +21,7 @@ export default function HomePage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
-          <a href="#" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
+          <a href="/" className="text-white py-2 px-">HOME</a>
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
           <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
         </nav>
@@ -30,7 +30,7 @@ export default function HomePage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <span className="uppercase text-base tracking-wide">USERNAME</span>
+            <a href="/perfil" className="underline uppercase text-base tracking-wide">USUARIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">
@@ -51,7 +51,7 @@ export default function HomePage() {
           <nav className="space-y-5 font-semibold mt-6">
             <div className="flex items-center gap-2">
               <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
-              <a href="#" className="block">Cadastro de Clientes</a>
+              <a href="/cadastrocliente" className="block">Cadastro de Clientes</a>
             </div>
             <div className="flex items-center gap-2">
               <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
@@ -68,9 +68,9 @@ export default function HomePage() {
           </nav>
 
           {/* Rodapé da sidebar */}
-          <div className="flex items-center gap-2 mb-2">
-            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
-            <span className="text-sm font-medium">Ferramentas</span>
+          <div className="text-black flex items-center gap-2">
+            <a href="/ferramentas" className="block">Ferramentas</a>
+            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
           </div>
         </aside>
 
@@ -81,6 +81,132 @@ export default function HomePage() {
         />
 
         {/* CONTEÚDO PRINCIPAL */}
+        <main className="py-20 flex-1 bg-cover md:bg-yellow-600 flex justify-center items-start p-4 md:p-10 min-h-0 md:ml-72">
+  <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl p-10 text-black">
+    {/* Cabeçalho */}
+    <div className="flex items-center justify-between mb-10">
+      <h1 className="text-4xl font-bold tracking-wide">PERFIL</h1>
+      <img src="/ICONEPERFIL.png" alt="Perfil" className="w-20 h-20" />
+    </div>
+
+    {/* Seção PERFIL */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold mb-6 border-b-2 border-black pb-2">
+        DADOS PESSOAIS
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label className="block text-sm font-semibold mb-2">Nome Completo</label>
+          <input
+            type="text"
+            placeholder="Digite o nome completo"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-2">CPF</label>
+          <input
+            type="text"
+            placeholder="000.000.000-00"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-2">Data de Nascimento</label>
+          <input
+            type="date"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-2">Sexo</label>
+          <select className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            <option>Selecione</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Outro</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    {/* Seção ENDEREÇO */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold mb-6 border-b-2 border-black pb-2">
+        ENDEREÇO
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label className="block text-sm font-semibold mb-2">CEP</label>
+          <input
+            type="text"
+            placeholder="00000-000"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-2">Cidade</label>
+          <input
+            type="text"
+            placeholder="Digite a cidade"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-2">Bairro</label>
+          <input
+            type="text"
+            placeholder="Digite o bairro"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-2">Rua</label>
+          <input
+            type="text"
+            placeholder="Digite a rua"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+      </div>
+    </section>
+
+    {/* Seção CONTATO */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold mb-6 border-b-2 border-black pb-2">
+        CONTATO
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label className="block text-sm font-semibold mb-2">E-mail</label>
+          <input
+            type="email"
+            placeholder="exemplo@email.com"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-2">Telefone</label>
+          <input
+            type="text"
+            placeholder="(00) 00000-0000"
+            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+        </div>
+      </div>
+    </section>
+
+    {/* Botões */}
+    <div className="flex justify-end gap-6 mt-8">
+      <button className="bg-red-700 text-white font-bold px-6 py-3 rounded-md hover:bg-red-800 transition">
+        CANCELAR
+      </button>
+      <button className="bg-yellow-500 text-black font-bold px-6 py-3 rounded-md hover:bg-yellow-600 transition">
+        SALVAR
+      </button>
+    </div>
+  </div>
+</main>
 
        
       </div>

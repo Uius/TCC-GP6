@@ -56,7 +56,7 @@ export default function RelatorioPage() {
                 <a href="/cadastrocliente" className="block">Cadastro de Clientes</a>
               </div>
 
-              <div className="flex flex-row items-center  rounded-md p-2">
+              <div className="flex flex-row items-center rounded-md">
                 <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
                 <a href="/relatorio" className="block underline">Relatórios</a>
               </div>
@@ -74,14 +74,18 @@ export default function RelatorioPage() {
           </div>
 
           <div className="text-black flex items-center gap-2">
-            <span className="text-sm">Ferramentas</span>
+            <a href="/ferramentas" className="block">Ferramentas</a>
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
           </div>
         </aside>
 
   {/* Divider vertical entre sidebar e main (apenas md+) */}
-  <div className="hidden md:block md:fixed md:top-20 md:left-72 md:bottom-0 w-[2px] bg-neutral-900/80 z-20" aria-hidden="true" />
+  <div
+          aria-hidden="true"
+          className="w-[6px] bg-white h-[calc(100vh-5rem)] fixed top-20 left-72 z-40"
+        />
 
+        
         {/* Main Content - adaptado para mobile */}
         <main className="flex-1 bg-yellow-600 flex justify-center items-start p-4 md:p-10 overflow-auto min-h-0 md:ml-72">
           <section className="bg-white rounded-lg shadow-2xl p-4 md:p-10 w-full max-w-5xl">
@@ -94,6 +98,8 @@ export default function RelatorioPage() {
                   className="w-full text-black h-24 md:h-28 border border-stone-300 rounded-md p-3 md:p-4 resize-none bg-white text-sm md:text-base"
                   placeholder="Relatório diário..."
                 />
+              
+                <button type="button" className=" text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-black-600 dark:focus:ring-gray-800">Enviar</button>
               </div>
 
               <div>
@@ -102,6 +108,8 @@ export default function RelatorioPage() {
                   className="w-full h-24 text-black md:h-28 border border-stone-300 rounded-md p-3 md:p-4 resize-none bg-white text-sm md:text-base"
                   placeholder="Relatório semanal..."
                 />
+
+                <button type="button" className=" text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-black-600 dark:focus:ring-gray-800">Enviar</button>
               </div>
 
               <div>
@@ -110,6 +118,8 @@ export default function RelatorioPage() {
                   className="w-full h-24 text-black md:h-28 border border-stone-300 rounded-md p-3 md:p-4 resize-none bg-white text-sm md:text-base"
                   placeholder="Relatório mensal..."
                 />
+
+                <button type="button" className=" text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-black-600 dark:focus:ring-gray-800">Enviar</button>
               </div>
             </div>
           </section>

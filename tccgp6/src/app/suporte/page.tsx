@@ -30,7 +30,7 @@ export default function HomePage() {
         <div className="flex items-center gap-10">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <span className="uppercase text-base tracking-wide">USERNAME</span>
+            <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">
@@ -69,9 +69,9 @@ export default function HomePage() {
           </nav>
 
           {/* Rodapé da sidebar */}
-          <div className="flex items-center gap-2 mb-2">
-            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
-            <span className="text-sm font-medium">Ferramentas</span>
+          <div className="text-black flex items-center gap-2">
+            <a href="/ferramentas" className="block">Ferramentas</a>
+            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
           </div>
         </aside>
 
