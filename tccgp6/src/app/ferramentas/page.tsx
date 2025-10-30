@@ -65,7 +65,7 @@ export default function FerramentaPage() {
           </div>
 
           <div className="text-black flex items-center gap-2 underline font-bold">
-            <span className="text-sm">Ferramentas</span>
+            <span className="text-sm underline">Ferramentas</span>
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
           </div>
         </aside>

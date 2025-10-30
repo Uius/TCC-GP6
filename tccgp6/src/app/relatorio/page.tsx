@@ -74,7 +74,7 @@ export default function RelatorioPage() {
           </div>
 
           <div className="text-black flex items-center gap-2">
-            <span className="text-sm">Ferramentas</span>
+            <a href="/ferramentas" className="block">Ferramentas</a>
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
           </div>
         </aside>
