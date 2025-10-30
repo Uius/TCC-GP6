@@ -58,7 +58,11 @@ export default function HomePage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
+<<<<<<< HEAD
           <a href="/" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
+=======
+          <a href="#" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
+>>>>>>> 985688351f59ecf19cff6bca342a093664b758d4
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
           <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
         </nav>
@@ -67,7 +71,11 @@ export default function HomePage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
+<<<<<<< HEAD
             <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
+=======
+            <span className="uppercase text-base tracking-wide">USERNAME</span>
+>>>>>>> 985688351f59ecf19cff6bca342a093664b758d4
           </div>
 
           <div className="text-right text-sm leading-4">
@@ -88,7 +96,11 @@ export default function HomePage() {
           <nav className="space-y-5 font-semibold mt-6">
             <div className="flex items-center gap-2">
               <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
+<<<<<<< HEAD
               <a href="#" className="block">Cadastro de Clientes</a>
+=======
+              <a href="/cadastrocliente" className="block underline">Cadastro de Clientes</a>
+>>>>>>> 985688351f59ecf19cff6bca342a093664b758d4
             </div>
             <div className="flex items-center gap-2">
               <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
@@ -118,7 +130,11 @@ export default function HomePage() {
         />
 
         {/* CONTEÚDO PRINCIPAL */}
+<<<<<<< HEAD
         <main className="flex-1 ml-[calc(72px+6px)] p-8 pt-10 bg-yellow-600 min-h-[calc(100vh-5rem)]">
+=======
+        <main className="flex-1 ml-[calc(18rem+6px)] p-8 pt-10 bg-yellow-600 min-h-[calc(100vh-5rem)]">
+>>>>>>> 985688351f59ecf19cff6bca342a093664b758d4
           <div className="max-w-4xl mx-auto space-y-6">
             {/* Accordion: Cadastrar novo usuario */}
             <div className="bg-white rounded-2xl p-6 relative">
