@@ -30,9 +30,9 @@ export default function HomePage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <span className="uppercase text-base tracking-wide">USERNAME</span>
+            <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
           </div>
-
+          
           <div className="text-right text-sm leading-4">
             <div className="flex items-center justify-end">
               <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5 mr-2" />
@@ -51,7 +51,7 @@ export default function HomePage() {
           <nav className="space-y-5 font-semibold mt-6">
             <div className="flex items-center gap-2">
               <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
-              <a href="#" className="block">Cadastro de Clientes</a>
+              <a href="/cadastrocliente" className="block">Cadastro de Clientes</a>
             </div>
             <div className="flex items-center gap-2">
               <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
@@ -100,7 +100,7 @@ export default function HomePage() {
                 className="w-full h-auto mb-6"
               />
               <iframe
-                className="w-full h-[420px] border-none"
+                className="w-full h-full border-none"
                 src="https://www.youtube.com/embed/DYl2STTuX-Q"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

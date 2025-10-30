@@ -30,7 +30,7 @@ export default function NotificacoesPage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <span className="uppercase text-base tracking-wide">USERNAME</span>
+            <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">
@@ -47,59 +47,31 @@ export default function NotificacoesPage() {
       {/* CONTEÚDO: wrapper responsivo (sidebar md+ + main flexível) */}
       <div className="flex flex-1 pt-20 min-h-0">
         {/* Sidebar: visível em md+, sticky para não ficar sob o header */}
-        <aside className="hidden md:block md:w-72 lg:w-80 bg-yellow-600 flex flex-col justify-between p-4 md:sticky md:top-20 md:h-[calc(100vh-80px)] text-black">
-          <div>
-            <nav className="space-y-4 text-black font-semibold">
-              <div className="flex flex-row">
-                <img
-                  src="/ICONECADCLIENTE.png"
-                  alt=""
-                  className="w-6 h-6 mr-2"
-                />
-                <a href="#" className="block">
-                  Cadastro de Clientes
-                </a>
-              </div>
-              <div className="flex flex-row">
-                <img
-                  src="/ICONERELATORIO.png"
-                  alt=""
-                  className="w-6 h-6 mr-2"
-                />
-                <a href="/relatorio" className="block">
-                  Relatórios
-                </a>
-              </div>
-              <div className="flex flex-row">
-                <img
-                  src="/ICONEORCAMENTO.png"
-                  alt=""
-                  className="w-6 h-6 mr-2"
-                />
-                <a href="/orcamentos" className="block">
-                  Orçamentos
-                </a>
-              </div>
-              <div className="flex flex-row">
-                <img
-                  src="/ICONENOTIFIC.png"
-                  alt=""
-                  className="w-6 h-6 mr-2"
-                />
-                <a href="/notificacoes" className="block">
-                  Notificações
-                </a>
-              </div>
-            </nav>
-          </div>
+        <aside className="w-72 bg-yellow-600 flex flex-col justify-between p-4 text-black h-[calc(100vh-5rem)] fixed top-20 left-0">
+          {/* Menu lateral */}
+          <nav className="space-y-5 font-semibold mt-6">
+            <div className="flex items-center gap-2">
+              <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
+              <a href="#" className="block">Cadastro de Clientes</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
+              <a href="/relatorio" className="block">Relatórios</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6" />
+              <a href="/orcamentos" className="block">Orçamentos</a>
+            </div>
+            <div className="flex items-center gap-2 underline">
+              <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6" />
+              <a href="/notificacoes" className="block">Notificações</a>
+            </div>
+          </nav>
 
-          <div className="text-black flex items-center gap-2">
-            <span className="text-sm">Ferramentas</span>
-            <img
-              src="/ICONECONFIG.png"
-              alt="Ferramentas"
-              className="h-6 w-6"
-            />
+          {/* Rodapé da sidebar */}
+          <div className="flex items-center gap-2 mb-2">
+            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
+            <span className="text-sm font-medium">Ferramentas</span>
           </div>
         </aside>
 
@@ -110,9 +82,10 @@ export default function NotificacoesPage() {
         <main className="flex-1 bg-yellow-600 p-6 md:p-8 overflow-auto min-h-0">
           <div className="w-full max-w-5xl mx-auto">
             <section className="bg-white rounded-lg shadow-2xl p-8 w-full">
-              <h2 className="text-2xl font-bold text-center mb-6">
+              <h2 className="text-2xl text-black font-bold text-center mb-6">
                 NOTIFICAÇÕES:
               </h2>
+
 
               <div className="space-y-4">
                 {/* 3x Var. Validade */}

@@ -23,14 +23,14 @@ export default function HomePage() {
         <nav className="flex gap-8 text-base font-semibold">
           <a href="#" className="text-white py-2 px-4 rounded-sm">HOME</a>
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
-          <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
+          <a href="/suporte" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">SUPORTE</a>
         </nav>
 
         {/* Usuário e hora */}
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <span className="uppercase text-base tracking-wide">USERNAME</span>
+            <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">

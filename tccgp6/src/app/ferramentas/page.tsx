@@ -20,7 +20,7 @@ export default function FerramentaPage() {
 
         <div className="flex items-center gap-3 relative z-10 ml-20 pl-[180px]">
           <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-          <span className="uppercase text-sm tracking-wide">USERNAME</span>
+          <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
         </div>
 
         <div className="flex items-center gap-6">
