@@ -9,12 +9,18 @@ export default function OrcamentosPage() {
   return (
     <div className="min-h-screen flex flex-col text-white bg-neutral-900">
       {/* HEADER */}
+<<<<<<< HEAD
       <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50 flex items-center h-20 px-4 sm:px-6 lg:px-8">
         {/* Logo: tamanho responsivo, maior em lg/xl */}
+=======
+      <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50 flex items-center justify-between h-20 px-8">
+        {/* Logo */}
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
         <div className="flex items-center">
           <img
             src="/LOGOBRANCA.png"
             alt="Logo"
+<<<<<<< HEAD
             className="h-10 sm:h-20 w-28 sm:w-40 object-contain lg:h-24 lg:w-48 xl:h-28 xl:w-56"
           />
         </div>
@@ -43,9 +49,36 @@ export default function OrcamentosPage() {
               <div>{time}</div>
             </div>
             <div>{date}</div>
+=======
+            className="h-20 w-40 object-contain"
+          />
+        </div>
+
+        {/* Menu principal */}
+        <nav className="flex gap-8 text-base font-semibold">
+          <a href="#" className="text-white py-2 px-4 rounded-sm">HOME</a>
+          <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
+          <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
+        </nav>
+
+        {/* Usuário e hora */}
+        <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
+            <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
+            <span className="uppercase text-base tracking-wide">USERNAME</span>
+          </div>
+
+          <div className="text-right text-sm leading-4">
+            <div className="flex items-center justify-end">
+              <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5 mr-2" />
+              <span>{time}</span>
+            </div>
+            <span>{date}</span>
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
           </div>
         </div>
       </header>
+
 
       {/* CONTEÚDO - sidebar + main */}
       <div className="flex flex-1 pt-20 min-h-0">

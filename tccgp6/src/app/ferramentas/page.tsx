@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+<<<<<<< HEAD
 import { useClock } from '@/hooks/useClock'
 
 
@@ -18,6 +19,25 @@ export default function FerramentaPage() {
           className="h-20 w-40 absolute left-6"
         />
 
+=======
+import {useClock} from '@/hooks/useClock'
+import useFontSize, { FontSizeKey } from '@/hooks/useFontSize'
+
+export default function FerramentaPage() {
+  const { time, date } = useClock()
+  const { size, setSize } = useFontSize()
+
+  return (
+    <div className="min-h-screen flex flex-col text-white bg-yellow-600">
+      {/* HEADER (fixo) */}
+      <header className="fixed top-0 left-0 right-0 z-30 bg-neutral-900 flex justify-between items-center h-20 px-6">
+        <img
+          src="/LOGOBRANCA.png"
+          alt="Logo"
+          className="h-20 w-40 absolute left-6"
+        />
+
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
         <div className="flex items-center gap-3 relative z-10 ml-20 pl-[180px]">
           <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
           <span className="uppercase text-sm tracking-wide">USERNAME</span>
@@ -127,7 +147,11 @@ export default function FerramentaPage() {
                       <select
                         value={size}
                         onChange={(e) =>
+<<<<<<< HEAD
                           setSize(e.target.value as 'small' | 'medium' | 'large')
+=======
+                          setSize(e.target.value as FontSizeKey)
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
                         }
                         aria-label="Tamanho da Letra"
                         className="appearance-none bg-white text-black border border-gray-300 rounded px-4 py-2 pr-8 w-48"
@@ -189,6 +213,11 @@ export default function FerramentaPage() {
           </section>
         </main>
       </div>
+<<<<<<< HEAD
     </div>
   )
+=======
+    </div>
+  )
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
 }

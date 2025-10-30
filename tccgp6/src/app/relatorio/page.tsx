@@ -10,30 +10,36 @@ export default function RelatorioPage() {
     <div className="min-h-screen flex flex-col text-white">
 
       {/* HEADER (fixo) */}
-      <header className="fixed top-0 left-0 right-0 z-30 bg-neutral-900 flex justify-between items-center h-20 px-6">
-        <img
-          src="/LOGOBRANCA.png"
-          alt="Logo"
-          className="h-22 w-40 absolute left-6"
-        />
-
-        <div className="flex items-center gap-3 relative z-10 ml-20 pl-[180]">
-          <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-          <span className="uppercase text-sm tracking-wide">USERNAME</span>
+      <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50 flex items-center justify-between h-20 px-8">
+        {/* Logo */}
+        <div className="flex items-center">
+          <img
+            src="/LOGOBRANCA.png"
+            alt="Logo"
+            className="h-20 w-40 object-contain"
+          />
         </div>
 
+        {/* Menu principal */}
+        <nav className="flex gap-8 text-base font-semibold">
+          <a href="#" className="text-white py-2 px-4 rounded-sm">HOME</a>
+          <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
+          <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
+        </nav>
+
+        {/* Usuário e hora */}
         <div className="flex items-center gap-6">
-          <nav className="flex gap-6 text-sm">
-            <a href="/" className="text-white py-2 px-4">HOME</a>
-            <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
-            <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
-          </nav>
-          <div className="text-right text-xs leading-4">
-            <div className="flex items-center">
-              <img src="/ICONETEMPO.png" alt="Time" className="w-4 h-4 mr-2" />
-              <div>{time}</div>
+          <div className="flex items-center gap-3">
+            <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
+            <span className="uppercase text-base tracking-wide">USERNAME</span>
+          </div>
+
+          <div className="text-right text-sm leading-4">
+            <div className="flex items-center justify-end">
+              <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5 mr-2" />
+              <span>{time}</span>
             </div>
-            <div>{date}</div>
+            <span>{date}</span>
           </div>
         </div>
       </header>
@@ -57,7 +63,7 @@ export default function RelatorioPage() {
 
               <div className="flex flex-row items-center">
                 <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Orçamentos</a>
+                <a href="/orcamentos" className="block">Orçamentos</a>
               </div>
 
               <div className="flex flex-row items-center">

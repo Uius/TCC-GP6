@@ -21,7 +21,11 @@ export default function HomePage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
+<<<<<<< HEAD
           <a href="#" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
+=======
+          <a href="#" className="text-white py-2 px-4 rounded-sm">HOME</a>
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
           <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
         </nav>
@@ -42,6 +46,33 @@ export default function HomePage() {
           </div>
         </div>
       </header>
+
+<<<<<<< HEAD
+      {/* CONTEÚDO GERAL */}
+      <div className="flex flex-row w-full pt-20">
+        {/* SIDEBAR */}
+        <aside className="w-72 bg-yellow-600 flex flex-col justify-between p-4 text-black h-[calc(100vh-5rem)] fixed top-20 left-0">
+          {/* Menu lateral */}
+          <nav className="space-y-5 font-semibold mt-6">
+            <div className="flex items-center gap-2">
+              <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6" />
+              <a href="#" className="block">Cadastro de Clientes</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6" />
+              <a href="/relatorio" className="block">Relatórios</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6" />
+              <a href="/orcamentos" className="block">Orçamentos</a>
+            </div>
+            <div className="flex items-center gap-2">
+              <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6" />
+              <a href="/notificacoes" className="block">Notificações</a>
+            </div>
+          </nav>
+
+=======
 
       {/* CONTEÚDO GERAL */}
       <div className="flex flex-row w-full pt-20">
@@ -67,6 +98,7 @@ export default function HomePage() {
             </div>
           </nav>
 
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
           {/* Rodapé da sidebar */}
           <div className="flex items-center gap-2 mb-2">
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
@@ -83,8 +115,20 @@ export default function HomePage() {
         {/* CONTEÚDO PRINCIPAL */}
 
          {/* MAIN */}
+<<<<<<< HEAD
         <main className="flex-1 bg-yellow-600 overflow-y-auto p-8 xl:p-10">
           <div className="bg-white p-8 rounded-lg shadow-2xl text-center max-w-5xl mx-auto">
+=======
+        <main
+          className={
+            // adiciona margem à esquerda para compensar a sidebar fixa + divider,
+            // transforma o main em flex container que centraliza o conteúdo
+            'flex-1 bg-yellow-600 overflow-y-auto p-8 xl:p-10 flex items-center justify-center ' +
+            'min-h-[calc(100vh-5rem)] ml-[calc(18rem+6px)]'
+          }
+        >
+          <div className="bg-white p-8 rounded-lg shadow-2xl text-center max-w-5xl w-full">
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
             <h1 className="text-4xl font-bold text-black mb-4">SUPORTE</h1>
             <p className="text-gray-700 mb-8">
               Está enfrentando problemas com o site?<br />
@@ -94,6 +138,7 @@ export default function HomePage() {
 
             <div className="space-y-4">
               {[
+<<<<<<< HEAD
                 "Arthur Amatti Buzzete",
                 "Maria Júlia Costa",
                 "Mariana Cassiano Xavier Da Costa",
@@ -102,10 +147,49 @@ export default function HomePage() {
               ].map((name, index) => (
                 <div key={index} className="flex items-center bg-gray-800 text-white rounded-lg p-4 shadow-lg hover:scale-[1.01] transition-transform">
                   <div className="w-16 h-16 bg-gray-400 rounded-md mr-4 flex-shrink-0"></div>
+=======
+                {
+                  name: "Arthur Amatti Buzzete",
+                  email: "arthur.buzzete@email.com",
+                  telefone: "(11) 99999-1111",
+                  photo: "/devs/arthur.jpg"
+                },
+                {
+                  name: "Maria Júlia Costa",
+                  email: "maria.julia@email.com",
+                  telefone: "(11) 99999-2222",
+                  photo: "/devs/maria.jpg"
+                },
+                {
+                  name: "Mariana Cassiano Xavier Da Costa",
+                  email: "mariana.costa@email.com",
+                  telefone: "(11) 99999-3333",
+                  photo: "/devs/mariana.jpg"
+                },
+                {
+                  name: "Victor Hugo Garcia Da Costa Marquezini",
+                  email: "victor.marquezini@email.com",
+                  telefone: "(11) 99999-4444",
+                  photo: "/devs/victor.jpg"
+                },
+                {
+                  name: "William Feliks Rodrigues",
+                  email: "william.rodrigues@email.com",
+                  telefone: "(11) 99999-5555",
+                  photo: "/devs/william.jpg"
+                }
+              ].map((person, index) => (
+                <div key={index} className="flex items-center bg-gray-800 text-white rounded-lg p-4 shadow-lg hover:scale-[1.01] transition-transform">
+                  <img 
+                    src={person.photo} 
+                    alt={`Foto de ${person.name}`}
+                    className="w-16 h-16 rounded-md mr-4 flex-shrink-0 object-cover"
+                  />
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
                   <div className="text-left">
-                    <p className="font-bold">{name}</p>
-                    <p className="text-sm">E-mail:</p>
-                    <p className="text-sm">Telefone:</p>
+                    <p className="font-bold">{person.name}</p>
+                    <p className="text-sm">E-mail: {person.email}</p>
+                    <p className="text-sm">Telefone: {person.telefone}</p>
                   </div>
                 </div>
               ))}
@@ -117,6 +201,11 @@ export default function HomePage() {
           </div>
         </main>
       </div>
+<<<<<<< HEAD
     </div>
   )
+=======
+    </div>
+  )
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
 }

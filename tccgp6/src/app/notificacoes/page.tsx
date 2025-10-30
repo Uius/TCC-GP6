@@ -9,6 +9,7 @@ export default function NotificacoesPage() {
   return (
     <div className="min-h-screen flex flex-col text-white">
       {/* HEADER (fixo) */}
+<<<<<<< HEAD
     <header className="fixed top-0 left-0 right-0 z-50 bg-neutral-900 flex items-center justify-between h-24 px-12 shadow-md">
   {/* LOGO */}
   <div className="flex items-center gap-4">
@@ -43,9 +44,42 @@ export default function NotificacoesPage() {
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8 lg:w-9 lg:h-9" />
             <span className="uppercase text-sm tracking-wide lg:text-base">USERNAME</span>
+=======
+      <header className="bg-neutral-900 fixed top-0 left-0 w-full z-50 flex items-center justify-between h-20 px-8">
+        {/* Logo */}
+        <div className="flex items-center">
+          <img
+            src="/LOGOBRANCA.png"
+            alt="Logo"
+            className="h-20 w-40 object-contain"
+          />
+        </div>
+
+        {/* Menu principal */}
+        <nav className="flex gap-8 text-base font-semibold">
+          <a href="#" className="text-white py-2 px-4 rounded-sm">HOME</a>
+          <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
+          <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
+        </nav>
+
+        {/* Usuário e hora */}
+        <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
+            <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
+            <span className="uppercase text-base tracking-wide">USERNAME</span>
+          </div>
+
+          <div className="text-right text-sm leading-4">
+            <div className="flex items-center justify-end">
+              <img src="/ICONETEMPO.png" alt="Time" className="w-5 h-5 mr-2" />
+              <span>{time}</span>
+            </div>
+            <span>{date}</span>
+>>>>>>> acfb684a3b13269c00207ff238dd94594eb734f9
           </div>
           </div>
 </header>
+
 
       {/* CONTEÚDO: wrapper responsivo (sidebar md+ + main flexível) */}
       <div className="flex flex-1 pt-20 min-h-0">
@@ -70,7 +104,7 @@ export default function NotificacoesPage() {
                   alt=""
                   className="w-6 h-6 mr-2"
                 />
-                <a href="#" className="block">
+                <a href="/relatorio" className="block">
                   Relatórios
                 </a>
               </div>
