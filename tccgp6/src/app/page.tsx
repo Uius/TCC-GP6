@@ -108,7 +108,7 @@ export default function HomePage() {
           controls
           poster="/TUMBNAIL.jpg"
         >
-          <source src="/videos/tutorial.mp4" type="video/mp4" />
+          <source src="/tutorial.mp4" type="video/mp4" />
         </video>
       </div>
 
