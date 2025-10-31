@@ -339,7 +339,7 @@ export default function HomePage() {
 
            <div className="flex items-center gap-2 mb-2">
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
-            <a href='/ferramentas' className="text-black text-sm font-medium">Ferramentas</a>
+            <a href='/ferramentas' className="text-black font-bold text-sm">Ferramentas</a>
           </div>
         </aside>
 
