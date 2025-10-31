@@ -21,7 +21,7 @@ export default function HomePage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
-          <a href="#" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
+          <a href="#" className="text-white bg-zinc-800 py-2 px-4 underline rounded-sm">HOME</a>
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
           <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
         </nav>
@@ -30,7 +30,7 @@ export default function HomePage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
+            <a href="/perfil" className="uppercase text-base tracking-wide">USUÁRIO</a>
           </div>
           
           <div className="text-right text-sm leading-4">
