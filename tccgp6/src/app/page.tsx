@@ -81,33 +81,41 @@ export default function HomePage() {
         />
 
         {/* CONTEÚDO PRINCIPAL */}
-        <main className="flex-1 bg-yellow-600 ml-72 p-10 min-h-[calc(100vh-5rem)] text-black">
-          {/* Imagem principal */}
-          <section className="mb-10">
-            <img
-              src="/HOMEVAMOSLA.png"
-              alt="Vamos Lá"
-              className="w-full h-[400px] object-cover"
-            />
-          </section>
+        <main className="flex-1 bg-yellow-600 ml-72 p-10 min-h-[calc(100vh-5rem)] text-black flex flex-col items-center gap-10">
+  
+  {/* Imagem principal */}
+  <section className="w-full max-w-5xl">
+    <img
+      src="/HOMEVAMOSLA.png"
+      alt="Vamos Lá"
+      className="w-full rounded-md object-cover shadow-lg"
+    />
+  </section>
 
-          {/* Tutorial */}
-          <section>
-            <div className="bg-white p-4 rounded-md flex flex-col items-center">
-              <img
-                src="/TUTORIAL.png"
-                alt="Tutorial"
-                className="w-full h-auto mb-6"
-              />
-              <iframe
-                className="w-full h-full border-none"
-                src="https://www.youtube.com/embed/DYl2STTuX-Q"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </section>
-        </main>
+  {/* Tutorial */}
+  <section className="w-full max-w-5xl">
+    <div className="bg-white p-6 rounded-lg shadow-xl flex flex-col items-center gap-6">
+      
+      <img
+        src="/TUTORIAL.png"
+        alt="Tutorial"
+        className="w-full rounded-md"
+      />
+
+      <div className="w-full aspect-video">
+        <video
+          className="w-full h-full rounded-xl object-cover"
+          controls
+          poster="/TUMBNAIL.jpg"
+        >
+          <source src="/videos/tutorial.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+    </div>
+  </section>
+
+</main>
       </div>
     </div>
   )
