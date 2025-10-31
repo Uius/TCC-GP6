@@ -337,9 +337,9 @@ export default function HomePage() {
             </nav>
           </div>
 
-          <div className="text-black flex items-center gap-2">
-            <span className="text-sm">Ferramentas</span>
-            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
+           <div className="text-black flex items-center gap-2 mb-2">
+            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
+            <span className="text-sm font-medium">Ferramentas</span>
           </div>
         </aside>
 

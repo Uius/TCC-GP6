@@ -21,7 +21,7 @@ export default function HomePage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
-          <a href="#" className="text-white bg-gray-800 py-2 px-4 underline rounded-sm">HOME</a>
+          <a href="#" className="text-white bg-zinc-800 py-2 px-4 underline rounded-sm">HOME</a>
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
           <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
         </nav>
@@ -68,9 +68,9 @@ export default function HomePage() {
           </nav>
 
           {/* Rodapé da sidebar */}
-          <div className="text-black flex items-center gap-2">
-            <a href="/ferramentas" className="block">Ferramentas</a>
-            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-6 w-6" />
+          <div className="flex items-center gap-2 mb-2">
+            <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
+            <span className="text-sm font-medium">Ferramentas</span>
           </div>
         </aside>
 
