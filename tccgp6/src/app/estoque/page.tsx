@@ -337,9 +337,9 @@ export default function HomePage() {
             </nav>
           </div>
 
-           <div className="text-black flex items-center gap-2 mb-2">
+           <div className="flex items-center gap-2 mb-2">
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
-            <span className="text-sm font-medium">Ferramentas</span>
+            <a href='/ferramentas' className="text-black text-sm font-medium">Ferramentas</a>
           </div>
         </aside>
 

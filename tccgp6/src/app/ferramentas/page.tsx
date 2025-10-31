@@ -23,7 +23,7 @@ export default function FerramentaPage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
-          <a href="/" className="text-white bg-zinc-800 py-2 px-4 underline rounded-sm">HOME</a>
+          <a href="/" className="text-white py-2 px-4 rounded-sm">HOME</a>
           <a href="/estoque" className="text-white py-2 px-4">ESTOQUE</a>
           <a href="/suporte" className="text-white py-2 px-4">SUPORTE</a>
         </nav>
@@ -53,15 +53,15 @@ export default function FerramentaPage() {
             <nav className="space-y-4 text-black font-semibold">
               <div className="flex flex-row items-center">
                 <img src="/ICONECADCLIENTE.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Cadastro de Clientes</a>
+                <a href="cadastrocliente" className="block">Cadastro de Clientes</a>
               </div>
               <div className="flex flex-row items-center">
                 <img src="/ICONERELATORIO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Relatórios</a>
+                <a href="/relatorio" className="block">Relatórios</a>
               </div>
               <div className="flex flex-row items-center">
                 <img src="/ICONEORCAMENTO.png" alt="" className="w-6 h-6 mr-2" />
-                <a href="#" className="block">Orçamentos</a>
+                <a href="orcamentos" className="block">Orçamentos</a>
               </div>
               <div className="flex flex-row items-center">
                 <img src="/ICONENOTIFIC.png" alt="" className="w-6 h-6 mr-2" />
@@ -72,19 +72,24 @@ export default function FerramentaPage() {
 
            <div className="flex items-center gap-2 mb-2">
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
-            <span className="text-sm font-medium">Ferramentas</span>
+            <a href='/ferramentas' className="font-bold underline text-black text-sm">Ferramentas</a>
           </div>
         </aside>
 
+        <div
+          aria-hidden="true"
+          className="w-[6px] bg-white h-[calc(100vh-5rem)] fixed top-20 left-72 z-40"
+        />
+        
         {/* Main Content */}
         <main className="flex-1 flex justify-center items-start p-12 overflow-auto min-h-0 ml-72">
-          <section className="w-full max-w-5xl bg-white rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] p-10 border-8 border-yellow-600">
+          <section className="w-full max-w-5xl bg-white rounded-xl  p-10 border-8 ">
             <h2 className="text-4xl font-extrabold text-center mb-8 text-black tracking-widest">
               FERRAMENTAS:
             </h2>
 
             {/* Seção Visual */}
-            <div className="mb-10 border-2 border-black rounded-lg p-6 bg-white">
+            <div className="mb-10 border-2 border-gray-500 rounded-sm p-6 bg-white">
               <h3 className="text-2xl font-bold text-center mb-6 text-black">VISUAL</h3>
               <div className="space-y-6">
                 {/* Linha: Escolher Tema */}
@@ -161,10 +166,10 @@ export default function FerramentaPage() {
             </div>
 
             {/* Seção Ações */}
-            <div className="border-2 border-black rounded-lg p-6 bg-white">
+            <div className="border-2 border-gray-500 rounded-lg p-6 bg-white">
               <h3 className="text-2xl font-bold text-center mb-6 text-black">AÇÕES</h3>
               <div className="grid grid-cols-3 gap-6">
-                <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-md hover:shadow-lg">
+                <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-xl hover:shadow-2xl">
                   <div className="p-4 mb-3">
                     <img src="/NUVEM.png" alt="Importar/Exportar" className="w-15 h-12" />
                   </div>
@@ -173,7 +178,7 @@ export default function FerramentaPage() {
                   </span>
                 </button>
 
-                <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-md hover:shadow-lg">
+                <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-xl hover:shadow-2xl">
                   <div className="p-4 mb-3">
                     <img src="/CALCULADORA.png" alt="Calculadora" className="w-12 h-15" />
                   </div>
@@ -182,7 +187,7 @@ export default function FerramentaPage() {
                   </span>
                 </button>
 
-                <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-md hover:shadow-lg">
+                <button className="flex flex-col items-center justify-center p-6 border rounded-lg bg-white shadow-xl hover:shadow-2xl">
                   <div className="p-4 mb-3">
                     <img src="/CODIGO.png" alt="Código" className="w-15 h-15" />
                   </div>

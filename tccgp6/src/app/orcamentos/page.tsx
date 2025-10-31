@@ -87,9 +87,9 @@ export default function OrcamentosPage() {
           </nav>
 
           {/* Rodapé da sidebar */}
-          <div className="flex items-center gap-2 mb-2">
+           <div className="flex items-center gap-2 mb-2">
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
-            <span className="text-sm font-medium">Ferramentas</span>
+            <a href='/ferramentas' className="font-bold text-sm">Ferramentas</a>
           </div>
         </aside>
 
@@ -184,13 +184,13 @@ export default function OrcamentosPage() {
                 <div className="flex justify-between items-center mt-6">
                   <button
                     type="button"
-                    className="bg-red-600 text-white px-6 py-2 rounded"
+                    className="font-bold bg-red-600 text-white px-6 py-2 rounded"
                   >
                     Cancelar
                   </button>
                   <button
                     type="submit"
-                    className="bg-yellow-600 text-black px-6 py-2 rounded"
+                    className="font-bold bg-yellow-600 text-white px-6 py-2 rounded"
                   >
                     Enviar
                   </button>

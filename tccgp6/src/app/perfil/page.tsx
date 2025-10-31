@@ -68,9 +68,9 @@ export default function HomePage() {
           </nav>
 
           {/* Rodapé da sidebar */}
-           <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-center gap-2 mb-2">
             <img src="/ICONECONFIG.png" alt="Ferramentas" className="h-5 w-5" />
-            <span className="text-sm font-medium">Ferramentas</span>
+            <a href='/ferramentas' className="font-bold text-sm">Ferramentas</a>
           </div>
         </aside>
 
@@ -81,132 +81,107 @@ export default function HomePage() {
         />
 
         {/* CONTEÚDO PRINCIPAL */}
-        <main className="py-20 flex-1 bg-cover md:bg-yellow-600 flex justify-center items-start p-4 md:p-10 min-h-0 md:ml-72">
+        <main className="flex-1 bg-yellow-600 flex justify-center items-start p-6 md:p-10 min-h-[calc(100vh-5rem)] md:ml-72">
   <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl p-10 text-black">
     {/* Cabeçalho */}
-    <div className="flex items-center justify-between mb-10">
-      <h1 className="text-4xl font-bold tracking-wide">PERFIL</h1>
-      <img src="/ICONEPERFIL.png" alt="Perfil" className="w-20 h-20" />
+    <div className="flex justify-between items-center border-b-2 border-gray-300 pb-6 mb-8">
+      <div>
+        <h1 className="text-3xl font-extrabold text-yellow-600 tracking-wide mb-1">PERFIL</h1>
+        <h2 className="text-xl font-bold">ADEGA SANTU MEE</h2>
+        <div className="mt-2 text-sm text-gray-600">
+          <p className="font-semibold">Informações Gerais</p>
+          <p>data de cad. 24/03/2025</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center">
+        {/* Espaço para logo */}
+        <div className="w-40 h-40 rounded-full border border-gray-300 flex items-center justify-center overflow-hidden">
+          <img
+            src="/santume.png"
+            alt="Logo da empresa"
+            className="object-contain w-full h-full"
+          />
+        </div>
+      </div>
     </div>
 
     {/* Seção PERFIL */}
     <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-6 border-b-2 border-black pb-2">
-        DADOS PESSOAIS
-      </h2>
+      <h3 className="text-xl font-bold text-yellow-600 mb-4">PERFIL</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm font-semibold mb-2">Nome Completo</label>
-          <input
-            type="text"
-            placeholder="Digite o nome completo"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <label className="block text-sm font-semibold mb-1">Nome</label>
+          <input type="text" placeholder="Nome" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
         <div>
-          <label className="block text-sm font-semibold mb-2">CPF</label>
-          <input
-            type="text"
-            placeholder="000.000.000-00"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <label className="block text-sm font-semibold mb-1">Sobrenome</label>
+          <input type="text" placeholder="Sobrenome" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
         <div>
-          <label className="block text-sm font-semibold mb-2">Data de Nascimento</label>
-          <input
-            type="date"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <label className="block text-sm font-semibold mb-1">CNPJ</label>
+          <input type="text" placeholder="CNPJ" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
         <div>
-          <label className="block text-sm font-semibold mb-2">Sexo</label>
-          <select className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500">
-            <option>Selecione</option>
-            <option>Masculino</option>
-            <option>Feminino</option>
-            <option>Outro</option>
-          </select>
+          <label className="block text-sm font-semibold mb-1">Código</label>
+          <input type="text" placeholder="Código" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
       </div>
     </section>
 
     {/* Seção ENDEREÇO */}
     <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-6 border-b-2 border-black pb-2">
-        ENDEREÇO
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label className="block text-sm font-semibold mb-2">CEP</label>
-          <input
-            type="text"
-            placeholder="00000-000"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+      <h3 className="text-xl font-bold text-yellow-600 mb-4">ENDEREÇO</h3>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="md:col-span-2">
+          <label className="block text-sm font-semibold mb-1">Rua</label>
+          <input type="text" placeholder="Nome Da Rua" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
         <div>
-          <label className="block text-sm font-semibold mb-2">Cidade</label>
-          <input
-            type="text"
-            placeholder="Digite a cidade"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <label className="block text-sm font-semibold mb-1">N°</label>
+          <input type="text" placeholder="N°" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
         <div>
-          <label className="block text-sm font-semibold mb-2">Bairro</label>
-          <input
-            type="text"
-            placeholder="Digite o bairro"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-semibold mb-2">Rua</label>
-          <input
-            type="text"
-            placeholder="Digite a rua"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <label className="block text-sm font-semibold mb-1">Bairro</label>
+          <input type="text" placeholder="Bairro" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
       </div>
     </section>
 
     {/* Seção CONTATO */}
     <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-6 border-b-2 border-black pb-2">
-        CONTATO
-      </h2>
+      <h3 className="text-xl font-bold text-yellow-600 mb-4">CONTATO</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm font-semibold mb-2">E-mail</label>
-          <input
-            type="email"
-            placeholder="exemplo@email.com"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <label className="block text-sm font-semibold mb-1">E-mail</label>
+          <input type="email" placeholder="E-mail" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
         <div>
-          <label className="block text-sm font-semibold mb-2">Telefone</label>
-          <input
-            type="text"
-            placeholder="(00) 00000-0000"
-            className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          />
+          <label className="block text-sm font-semibold mb-1">Telefone</label>
+          <input type="text" placeholder="Telefone" className="w-full border border-gray-300 rounded-md p-3" />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-1">Telefone Fixo</label>
+          <input type="text" placeholder="Telefone Fixo" className="w-full border border-gray-300 rounded-md p-3" />
+        </div>
+        <div>
+          <label className="block text-sm font-semibold mb-1">Observações</label>
+          <input type="text" placeholder="Observações" className="w-full border border-gray-300 rounded-md p-3" />
         </div>
       </div>
     </section>
 
     {/* Botões */}
-    <div className="flex justify-end gap-6 mt-8">
-      <button className="bg-red-700 text-white font-bold px-6 py-3 rounded-md hover:bg-red-800 transition">
-        CANCELAR
+    <div className="flex justify-between mt-10">
+      <button className="bg-red-600 text-white font-bold px-8 py-3 rounded-md hover:bg-red-700 transition">
+        Cancelar
       </button>
-      <button className="bg-yellow-500 text-white font-bold px-6 py-3 rounded-md hover:bg-yellow-600 transition">
-        SALVAR
+      <button className="bg-yellow-500 text-white font-bold px-8 py-3 rounded-md hover:bg-yellow-600 transition">
+        Salvar
       </button>
     </div>
   </div>
 </main>
+
 
        
       </div>
