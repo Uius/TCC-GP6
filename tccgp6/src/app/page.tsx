@@ -1,10 +1,39 @@
 'use client'
-
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { useClock } from '@/hooks/useClock'
 
 export default function HomePage() {
   const { time, date } = useClock()
+  const router = useRouter()
+  const [ready, setReady] = useState(false)
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const user = sessionStorage.getItem('user')
+    if (!user) {
+      // aguarda microtick para permitir que possíveis sets de localStorage (após login) ocorram
+      setTimeout(() => {
+        const userAfter = sessionStorage.getItem('user')
+        if (!userAfter) {
+          router.replace('/login')
+        } else {
+          setReady(true)
+        }
+      }, 50)
+      return
+    }
+    setReady(true)
+  }, [router])
+
+  if (!ready) {
+    // simples loader para evitar tela em branco
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-black text-white">
+        <div>Carregando...</div>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
