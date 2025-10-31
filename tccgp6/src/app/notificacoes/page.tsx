@@ -30,7 +30,7 @@ export default function NotificacoesPage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <a href="/perfil" className="uppercase text-base tracking-wide">USUARIO</a>
+            <a href="/perfil" className="uppercase text-base tracking-wide">USUÁRIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">
@@ -86,15 +86,15 @@ export default function NotificacoesPage() {
         {/* adiciona margem-left em md+ para não ficar sob a sidebar + divisor (18rem + 15px) */}
         <main className="flex-1 bg-yellow-600 p-6 md:p-8 overflow-auto min-h-0 md:ml-[calc(18rem+15px)]">
           <div className="w-full max-w-5xl mx-auto">
-            <section className="bg-white rounded-lg shadow-2xl p-8 w-full">
+            <section className="bg-white rounded-lg shadow-2xl p-8 w-full ">
               <h2 className="text-2xl text-black font-bold text-center mb-6">
                 NOTIFICAÇÕES:
               </h2>
 
 
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {/* 3x Var. Validade */}
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow-xl/30">
                   <div className="flex items-center gap-3">
                     <img
                       src="/ICONEVALIDADE.png"
@@ -125,7 +125,7 @@ export default function NotificacoesPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow-xl/30">
                   <div className="flex items-center gap-3">
                     <img
                       src="/ICONEVALIDADE.png"
@@ -156,7 +156,7 @@ export default function NotificacoesPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow-xl/30">
                   <div className="flex items-center gap-3">
                     <img
                       src="/ICONEVALIDADE.png"
@@ -188,7 +188,7 @@ export default function NotificacoesPage() {
                 </div>
 
                 {/* 3x Var. Alerta de Estoque */}
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow-xl/30">
                   <div className="flex items-center gap-3">
                     <img
                       src="/ICONEALERTA.png"
@@ -219,7 +219,7 @@ export default function NotificacoesPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow-xl/30">
                   <div className="flex items-center gap-3">
                     <img
                       src="/ICONEALERTA.png"
@@ -250,7 +250,7 @@ export default function NotificacoesPage() {
                   </div>
                 </div>
 
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white p-4 rounded-lg shadow-xl/30">
                   <div className="flex items-center gap-3">
                     <img
                       src="/ICONEALERTA.png"
