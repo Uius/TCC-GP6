@@ -106,7 +106,7 @@ export default function NotificacoesPage() {
                         ALERTA DE VALIDADE
                       </p>
                       <p className="text-sm text-stone-800">
-                        O produto 'Leite UHT' vence em 3 dias.
+                        O produto 'Coca-Cola' vence em 3 dias.
                       </p>
                     </div>
                   </div>
@@ -137,7 +137,7 @@ export default function NotificacoesPage() {
                         ALERTA DE VALIDADE
                       </p>
                       <p className="text-sm text-stone-800">
-                        O produto 'Iogurte' vence em 2 dias.
+                        O produto 'Monster' vence em 2 dias.
                       </p>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ export default function NotificacoesPage() {
                         ALERTA DE VALIDADE
                       </p>
                       <p className="text-sm text-stone-800">
-                        O produto 'Queijo' vence em 1 dia.
+                        O produto 'Brahma' vence em 1 dia.
                       </p>
                     </div>
                   </div>
@@ -200,7 +200,7 @@ export default function NotificacoesPage() {
                         ALERTA NO ESTOQUE
                       </p>
                       <p className="text-sm text-stone-800">
-                        O produto 'Papel Toalha' está com 2 unidades.
+                        O produto 'Amendoim' está com 2 unidades.
                       </p>
                     </div>
                   </div>
@@ -231,7 +231,7 @@ export default function NotificacoesPage() {
                         ALERTA NO ESTOQUE
                       </p>
                       <p className="text-sm text-stone-800">
-                        O produto 'Sabonete' está com 1 unidade.
+                        O produto 'Heineken' está com 1 unidade.
                       </p>
                     </div>
                   </div>
@@ -262,7 +262,7 @@ export default function NotificacoesPage() {
                         ALERTA NO ESTOQUE
                       </p>
                       <p className="text-sm text-stone-800">
-                        O produto 'Álcool Gel' está com 0 unidades.
+                        O produto 'Amstell' está com 0 unidades.
                       </p>
                     </div>
                   </div>
