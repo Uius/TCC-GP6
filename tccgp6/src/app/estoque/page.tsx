@@ -625,7 +625,7 @@ export default function HomePage() {
                                 Remover
                               </button>
                             </div>
-                            <button onClick={() => handleEdit(p.id)} className="px-3 py-1 text-sm bg-yellow-300 rounded border">Editar</button>
+                            <button onClick={() => handleEdit(p.id)} className="px-3 py-1 text-sm bg-yellow-500 rounded border">Editar</button>
                             <button onClick={() => handleDelete(p.id)} className="px-3 py-1 text-sm bg-red-500 text-white rounded">Excluir</button>
                           </div>
                         </div>

@@ -22,7 +22,7 @@ export default function OrcamentosPage() {
 
         {/* Menu principal */}
         <nav className="flex gap-8 text-base font-semibold">
-          <a href="/" className="text-white py-2 px-4 rounded-sm">
+          <a href="/" className=" text-white py-2 px-4 rounded-sm">
             HOME
           </a>
           <a href="/estoque" className="text-white py-2 px-4">
@@ -115,32 +115,32 @@ export default function OrcamentosPage() {
               {/* Left column (form fields) */}
               <div className="col-span-12 lg:col-span-7 space-y-4">
                 <div>
-                  <label className="block text-sm mb-2">Nome</label>
+                  <label className="font-bold block text-sm mb-2">Nome</label>
                   <input className="w-full border rounded px-3 py-2 text-sm" />
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2">Email</label>
+                  <label className="font-bold block text-sm mb-2">Email</label>
                   <input className="w-full border rounded px-3 py-2 text-sm" />
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2">Telefone</label>
+                  <label className="font-bold block text-sm mb-2">Telefone</label>
                   <input className="w-full border rounded px-3 py-2 text-sm" />
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2">Endereço</label>
+                  <label className="font-bold block text-sm mb-2">Endereço</label>
                   <input className="w-full border rounded px-3 py-2 text-sm" />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm mb-2">Quantidade</label>
+                    <label className="font-bold block text-sm mb-2">Quantidade</label>
                     <input className="w-full border rounded px-3 py-2 text-sm" />
                   </div>
                   <div>
-                    <label className="block text-sm mb-2">Valor</label>
+                    <label className="font-bold block text-sm mb-2">Valor</label>
                     <input className="w-full border rounded px-3 py-2 text-sm" />
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export default function OrcamentosPage() {
               {/* Right column (upload + descrição) */}
               <div className="col-span-12 lg:col-span-5 space-y-4">
                 <div>
-                  <label className="block text-sm mb-2">Descrição</label>
+                  <label className="font-bold block text-sm mb-2">Descrição</label>
                   <input
                     className="w-full border rounded px-3 py-2 text-sm"
                     placeholder="Descrição"

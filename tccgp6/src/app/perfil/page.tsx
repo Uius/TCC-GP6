@@ -107,7 +107,7 @@ export default function HomePage() {
 
     {/* Seção PERFIL */}
     <section className="mb-10">
-      <h3 className="text-xl font-bold text-yellow-600 mb-4">PERFIL</h3>
+      <h3 className="text-xl font-extrabold text-yellow-600 mb-4">PERFIL</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label className="block text-sm font-semibold mb-1">Nome</label>
@@ -130,7 +130,7 @@ export default function HomePage() {
 
     {/* Seção ENDEREÇO */}
     <section className="mb-10">
-      <h3 className="text-xl font-bold text-yellow-600 mb-4">ENDEREÇO</h3>
+      <h3 className="text-xl font-extrabold text-yellow-600 mb-4">ENDEREÇO</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="md:col-span-2">
           <label className="block text-sm font-semibold mb-1">Rua</label>
@@ -149,7 +149,7 @@ export default function HomePage() {
 
     {/* Seção CONTATO */}
     <section className="mb-10">
-      <h3 className="text-xl font-bold text-yellow-600 mb-4">CONTATO</h3>
+      <h3 className="text-xl font-extrabold text-yellow-600 mb-4">CONTATO</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label className="block text-sm font-semibold mb-1">E-mail</label>
