@@ -30,7 +30,7 @@ export default function HomePage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <a href="/perfil" className="text-white bg-zinc-800 py-2 px-4 underline rounded-sm">USUÁRIO</a>
+            <a href="/perfil" className="text-white bg-zinc-800 py-2 font-bold px-4 underline rounded-sm">USUÁRIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">

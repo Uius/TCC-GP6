@@ -31,7 +31,7 @@ export default function RelatorioPage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <a href="/perfil" className="uppercase text-base tracking-wide">USUÁRIO</a>
+            <a href="/perfil" className="uppercase font-bold text-base tracking-wide">USUÁRIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">
@@ -99,7 +99,7 @@ export default function RelatorioPage() {
                   placeholder="Relatório diário..."
                 />
               
-                <button type="button" className="font-bold m-2 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:border-yellow-600 dark:focus:ring--700">Enviar</button>
+                <button type="button" className="font-bold m-2 text-gray-900 bg-yellow-500  focus:outline-none hover:bg-yellow-400 focus:ring-4 focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:border-yellow-600 dark:focus:ring--700">Enviar</button>
               </div>
 
               <div>
@@ -109,7 +109,7 @@ export default function RelatorioPage() {
                   placeholder="Relatório semanal..."
                 />
 
-                <button type="button" className="font-bold m-2 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:border-yellow-600 dark:focus:ring--700">Enviar</button>
+                <button type="button" className="font-bold m-2 text-gray-900 bg-yellow-500  focus:outline-none hover:bg-yellow-400 focus:ring-4 focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:border-yellow-600 dark:focus:ring--700">Enviar</button>
               </div>
 
               <div>
@@ -119,7 +119,7 @@ export default function RelatorioPage() {
                   placeholder="Relatório mensal..."
                 />
 
-               <button type="button" className="font-bold m-2 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:border-yellow-600 dark:focus:ring--700">Enviar</button>
+               <button type="button" className="font-bold m-2 text-gray-900 bg-yellow-500 focus:outline-none hover:bg-yellow-400 focus:ring-4 focus:ring-gray-100  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-yellow-600 dark:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:border-yellow-600 dark:focus:ring--700">Enviar</button>
               </div>
             </div>
           </section>

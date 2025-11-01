@@ -30,7 +30,7 @@ export default function HomePage() {
         <div className="flex items-center gap-10">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <a href="/perfil" className="uppercase text-base tracking-wide">USUÁRIO</a>
+            <a href="/perfil" className="uppercase font-bold text-base tracking-wide">USUÁRIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">

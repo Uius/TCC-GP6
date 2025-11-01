@@ -67,7 +67,7 @@ export default function HomePage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <span className="uppercase text-base tracking-wide">USUÁRIO</span>
+            <span className="uppercase text-base font-bold tracking-wide">USUÁRIO</span>
           </div>
 
           <div className="text-right text-sm leading-4">

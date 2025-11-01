@@ -30,7 +30,7 @@ export default function NotificacoesPage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <a href="/perfil" className="uppercase text-base tracking-wide">USUÁRIO</a>
+            <a href="/perfil" className="uppercase text-base font-bold tracking-wide">USUÁRIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">

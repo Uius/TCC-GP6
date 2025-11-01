@@ -3,12 +3,10 @@
 import React from 'react'
 import { useClock } from '@/hooks/useClock'
 import useFontSize, { FontSizeKey } from '@/hooks/useFontSize'
-import { useTheme } from '@/hooks/useTheme'
 
 export default function FerramentaPage() {
   const { time, date } = useClock()
   const { size, setSize } = useFontSize()
-  const { theme, toggleTheme } = useTheme()
 
   return (
     <div className="min-h-screen flex flex-col text-black dark:text-white bg-yellow-500 dark:bg-neutral-800 transition-colors duration-300">
@@ -27,7 +25,7 @@ export default function FerramentaPage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <a href="/perfil" className="uppercase text-base tracking-wide">USUÁRIO</a>
+            <a href="/perfil" className="uppercase font-bold text-base tracking-wide">USUÁRIO</a>
           </div>
           
           <div className="text-right text-sm leading-4">
@@ -93,8 +91,6 @@ export default function FerramentaPage() {
                   <div className="flex-1 flex items-center justify-between gap-4">
                     <label className="font-bold">Escolher Tema:</label>
                     <select
-                      value={theme}
-                      onChange={(e) => toggleTheme(e.target.value as 'light' | 'dark')}
                       className="appearance-none bg-white dark:bg-neutral-700 text-black dark:text-white border border-gray-300 dark:border-neutral-600 rounded px-4 py-2 pr-8 w-56"
                     >
                       <option value="light">Claro</option>

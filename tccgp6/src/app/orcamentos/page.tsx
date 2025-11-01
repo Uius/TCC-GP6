@@ -41,7 +41,7 @@ export default function OrcamentosPage() {
               alt="User Profile"
               className="w-8 h-8"
             />
-            <span className="uppercase text-base tracking-wide">USUÁRIO</span>
+           <a href="/perfil" className="uppercase text-base font-bold tracking-wide">USUÁRIO</a>
           </div>
 
           <div className="text-right text-sm leading-4">

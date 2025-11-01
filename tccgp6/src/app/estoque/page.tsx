@@ -290,7 +290,7 @@ export default function HomePage() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <img src="/ICONEPERFIL.png" alt="User Profile" className="w-8 h-8" />
-            <a href="/perfil" className="uppercase text-base text-white tracking-wide">USUÁRIO</a>
+            <a href="/perfil" className="uppercase font-bold text-base text-white tracking-wide">USUÁRIO</a>
           </div>
           
           <div className="text-right text-white text-sm leading-4">
@@ -571,7 +571,7 @@ export default function HomePage() {
                                       Remover
                                     </button>
                                   </div>
-                                  <button onClick={() => handleEdit(p.id)} className="px-3 py-1 text-sm bg-yellow-300 rounded border">Editar</button>
+                                  <button onClick={() => handleEdit(p.id)} className="px-3 py-1 text-sm bg-yellow-500 rounded text-white font-bold">Editar</button>
                                   <button onClick={() => handleDelete(p.id)} className="px-3 py-1 text-sm bg-red-500 text-white rounded">Excluir</button>
                                 </div>
                               </div>
@@ -625,7 +625,7 @@ export default function HomePage() {
                                 Remover
                               </button>
                             </div>
-                            <button onClick={() => handleEdit(p.id)} className="px-3 py-1 text-sm bg-yellow-500 rounded border">Editar</button>
+                            <button onClick={() => handleEdit(p.id)} className="px-3 py-1 text-sm bg-yellow-500 rounded text-white font-bold">Editar</button>
                             <button onClick={() => handleDelete(p.id)} className="px-3 py-1 text-sm bg-red-500 text-white rounded">Excluir</button>
                           </div>
                         </div>
